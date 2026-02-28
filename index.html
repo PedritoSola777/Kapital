@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="HTML5 Template">
+        <!-- Site Title -->
+        <title>Kapital Consulting Group</title>
+        <!-- Site Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/imgs/logo/FavK.png">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- All CSS Files -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/progressbar.css">
+        <link rel="stylesheet" href="assets/css/master.css">
+        <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="assets/css/stylesMain.css">
+
+       <style>
+        
+   :root{
+  --nav-h: 110px; /* ajusta si necesitas */
+}
+
+/* Fuerza que el header no sea absolute */
+.header__area,
+.header__area.pos-abs{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
+  z-index: 99999;
+
+  background: #0c1014; /* color sólido */
+  backdrop-filter: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Alineación interna */
+.header__inner{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Texto del menú en blanco */
+.main-menu > ul > li > a{
+  color: #fff !important;
+}
+
+.main-menu > ul > li > a:hover{
+  color: #c59d5f !important; /* color acento */
+}
+
+/* Empuja el contenido debajo del header */
+body{
+  padding-top: var(--nav-h);
+}
+
+/* Responsive */
+@media (max-width: 991px){
+  :root{ --nav-h: 90px; }
+}
+
+@media (max-width: 575px){
+  :root{ --nav-h: 78px; }
+}
+
+.breadcrumb__area{
+  display: block;
+  min-height: 600px; /* antes 420px */
+  padding: 160px 0;  /* antes 110px */
+  padding-top: 600px;
+
+  background-color: #0c1014;
+  background-image: url("assets/imgs/hero/bannerIndexK.jpg") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ====== OFFCANVAS debajo del header (no tapa el burger) ====== */
+:root{
+  --nav-h: 110px;
+}
+@media (max-width: 991px){ :root{ --nav-h: 90px; } }
+@media (max-width: 575px){ :root{ --nav-h: 78px; } }
+
+/* Header arriba sí o sí */
+.header__area,
+.header__area.pos-abs{
+  position: fixed !important;
+  top: 0; left: 0; right: 0;
+  z-index: 1000000 !important;
+}
+
+/* OFFCANVAS: arranca debajo del header */
+.offcanvas__area{
+  position: fixed !important;
+  top: var(--nav-h) !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+
+  height: calc(100vh - var(--nav-h)) !important;
+  z-index: 999000 !important; /* debajo del header */
+}
+
+/* Por si el template usa inner con height propia */
+.offcanvas__inner{
+  height: 100% !important;
+  overflow-y: auto !important;
+}
+
+/* El overlay (si existe) NO debe cubrir el header */
+.offcanvas__overlay,
+.body-overlay,
+.offcanvas-overlay{
+  position: fixed !important;
+  top: var(--nav-h) !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 998500 !important;
+}
+
+/* Evita que el header recorte el burger */
+.header__inner,
+.header__others,
+.header__offcanvas{
+  overflow: visible !important;
+}
+
+.breadcrumb__area{
+  width: 100%;
+  height: 70vh;          /* 🔥 menos alto */
+  min-height: 420px;     /* mantiene tamaño mínimo elegante */
+
+  background-image: url("https://img.freepik.com/foto-gratis/empleados-trabajando-juntos-vista-lateral_23-2150152250.jpg?t=st=1772143791~exp=1772147391~hmac=ce141e7b219dd7c134dae1bec9a2aad5e02b318bf284258e2eff91dc3e3aa670&w=1480") !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;  /* mantenemos cover */
+
+  position: relative;
+  overflow: hidden;
+}
+
+       </style>
+       
+
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+        <!-- Scroll to top -->
+        <button id="scroll_top" class="scroll-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <!-- Offcanvas area start -->
+        <div class="offcanvas__area">
+  <div class="offcanvas__inner">
+    <div class="offcanvas__top">
+      <img src="assets/imgs/logo/Kapital8.png" alt="Logo">
+      <button id="offcanvas_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="offcanvas__search">
+      <form action="#">
+        <input type="text" placeholder="Buscar..." name="s">
+      </form>
+    </div>
+
+    <div class="offcanvas__menu">
+      <div class="offcanvas-menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="privacy.html">Aviso de privacidad</a></li>
+          <li><a href="tramites.html">Trámites</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="offcanvas__map">
+      <iframe
+        src="https://www.google.com/maps?q=Torre+Albertina+Puebla&output=embed"
+        loading="lazy"></iframe>
+    </div>
+
+    <div class="offcanvas__btm">
+      <div class="footer__address-3">
+        <ul>
+          <li>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <p class="text-white">
+              Torre Albertina<br>
+              Calle Tehuacan Sur 60, La Paz<br>
+              Heroica Puebla de Zaragoza, Puebla
+            </p>
+          </li>
+
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div>
+              <a href="tel:+5217444574309">+52 1 744 457 4309</a>
+              <a href="tel:+522215851569">(221) 585 1569</a>
+            </div>
+          </li>
+
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <a href="mailto:proyectos@kapitalconsultinggroup.com">proyectos@kapitalconsultinggroup.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__social-3">
+        <ul>
+          <!-- <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- Offcanvas area end -->
+
+        
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- Header area start -->
+           <header class="header__area pos-abs plr-100">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html"><img src="assets/imgs/logo/Kapital8.png" alt="Site Logo" style="width: 250px;"></a>
+      </div>
+      <div class="header__menu">
+        <nav class="main-menu">
+          <ul>
+  <li><a href="index.html">Inicio</a></li>
+
+  <li><a href="contact.html">Contacto</a></li>
+
+  <li><a href="privacy.html">Aviso de privacidad</a></li>
+
+  <li><a href="tramites.html">Trámites</a></li>
+
+  <li><a href="faq.html">Preguntas frecuentes</a></li>
+
+  <li><a href="blog.html">Blog</a></li>
+</ul>
+        </nav>
+      </div>
+      <div class="header__others">
+        <div class="header__search">
+          <!-- <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+          <button class="search-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="header__offcanvas">
+          <button class="menu_icon">
+            <img src="assets/imgs/icon/menu.png" alt="Menu Icon">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+                <div class="search__form">
+                    <form action="#">
+                        <input type="text" name="s" placeholder="Search...">
+                    </form>
+                </div>
+                <!-- Header area end -->
+                <main>
+                    <section class="breadcrumb__area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="breadcrumb__inner">
+              <!-- <div class="breadcrumb__left">
+                <h1 class="breadcrumb__title">Contact</h1>
+              </div>
+              <div class="breadcrumb__right">
+                <ul>
+                  <li> <a href="index.html">home</a> </li>
+                  <li> <a href="#">Contact</a> </li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+                    <!-- Hero area start -->
+       
+                    <!-- Hero area end -->
+
+                    <!-- Service area start -->
+                    <!-- <section class="service__area pt-150 pb-130">
+                        <div class="container">
+                            <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
+                                <div class="row pb-120">
+                                    <div class="col-xxl-7 col-xl-7 col-xl-7">
+                                        <div class="service__title-wrap" data-aos="fade-up">
+                                            <h2 class="sec-subtitle">best service <span>best service</span>
+                                            </h2>
+                                            <h3 class="sec-title heading-animation">Innovative solutions for <br> a digital world </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-5 col-xl-5 col-xl-5">
+                                        <div class="service__text p-animation pt-0">
+                                            <p class="ms-0">Which is the same as saying through shrinking from toil and pain in These cases are many perfectly simple and easy to distinguish thiIn a free hour this when</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-inner px-lg-5 px-4">
+                                <div class="row pt-4">
+                                    <div class="col-xxl-4 col-xl-4 col-xl-4 col-md-6 mb-4">
+                                        <div class="service__item style2">
+                                            <div class="service__content">
+                                                <div class="icon-box">
+                                                    <img src="assets/imgs/service/4/4.png" alt="Service Icon">
+                                                </div>
+                                                <a href="service-details.html">
+                                                    <div class="service__title">Pixel Perfect Design</div>
+                                                </a>
+                                                <p>Health and medical is a encompasses a wide range of topics related to health</p>
+                                                <a class="db-btn-arrow" href="service-details.html">Read More <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-4 col-xl-4 col-md-6 mb-4">
+                                        <div class="service__item style2">
+                                            <div class="service__content">
+                                                <div class="icon-box">
+                                                    <img src="assets/imgs/service/4/5.png" alt="Service Icon">
+                                                </div>
+                                                <a href="service-details.html">
+                                                    <div class="service__title">Creative Edge Solutions</div>
+                                                </a>
+                                                <p>Health and medical is a encompasses a wide range of topics related to health</p>
+                                                <a class="db-btn-arrow" href="service-details.html">Read More <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-4 col-xl-4 col-md-6 mb-4">
+                                        <div class="service__item style2">
+                                            <div class="service__content">
+                                                <div class="icon-box">
+                                                    <img src="assets/imgs/service/4/6.png" alt="Service Icon">
+                                                </div>
+                                                <a href="service-details.html">
+                                                    <div class="service__title">The Pixel Producers</div>
+                                                </a>
+                                                <p>Health and medical is a encompasses a wide range of topics related to health</p>
+                                                <a class="db-btn-arrow" href="service-details.html">Read More <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+                    <!-- Service area end -->
+
+                    <!-- About area start -->
+                    <section class="about__area pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
+                                    <div class="about__imgs" data-aos="fade-up">
+                                        <div class="image-1">
+                                            <img class="border-radius-25" src="https://img.freepik.com/foto-gratis/casa-juguete-cerca-equipo-seguridad-construccion_23-2147831890.jpg?t=st=1767900454~exp=1767904054~hmac=b97479836882be5a4e9e96812ede773337619cc7425e6f713f30b25e4ced7bd6&w=1480" alt="Image">
+                                        </div>
+                                        <!-- <div class="image-2">
+                                            <img src="assets/imgs/about/3.png" alt="Image" data-speed="0.85">
+                                        </div> -->
+                                        <!-- <div class="bell">
+                                            <span>
+                                                <i class="fa-regular fa-bell text-white"></i>
+                                            </span>
+                                        </div> -->
+                                        <div class="projects">
+                                            <img src="assets/imgs/icon/medal.png" alt="Medal Icon">
+                                            <p>
+                                                <span class="counter_fast">710+</span>Proyectos completados
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
+                                    <div class="about__content" data-aos="fade-up" data-aos-delay="500">
+                                        <h2 class="sec-subtitle">NUESTROS ANTECEDENTES<span>About Us</span>
+                                        </h2>
+                                        <!-- <h3 class="sec-title heading-animation">Innovative solutions for a digital world</h3> -->
+                                        <div class="p-animation">
+  <p>
+    El mundo de las afores y las pensiones suele percibirse como un campo complejo, desconocido y, en muchas ocasiones, difícil de alcanzar para los trabajadores mexicanos.
+  </p>
+
+  <p>
+    Surgen preguntas importantes:
+    <br>
+    • ¿Por qué existe una cultura limitada sobre el ahorro para el retiro en nuestro país?
+    <br>
+    • ¿Por qué acceder a nuestros propios ahorros puede resultar tedioso o complicado?
+    <br>
+    • ¿Por qué cada vez parece más difícil pensionarse?
+  </p>
+
+  <p>
+    La ideología de nuestra empresa y nuestro equipo de trabajo se basa en el aprendizaje compartido. Somos fieles creyentes de que la información se hizo para compartirla y nuestra misión es asesorar a los trabajadores mexicanos para que gocen de todos sus derechos como trabajadores y del derecho a contar con una cuenta afore.
+  </p>
+
+  <p>
+    Contamos con un equipo de trabajo de más de 50 colaboradores, ayudando a derechohabientes de toda la República Mexicana, y nos especializamos en dos sectores: pensiones y retiros de afore.
+  </p>
+
+  <p>
+    En la actualidad, la mayoría de la gente piensa que sólo se puede retirar dinero de su afore mediante el apoyo por desempleo y que únicamente cada 5 años pueden realizar este retiro. Sin embargo, hoy en día existen varias opciones adicionales a las que podemos acceder.
+  </p>
+
+  <p>
+    En cuanto a los créditos de Infonavit y Fovissste, las opciones también son muchas. Antes sólo conocíamos el crédito para comprar una casa, pero hoy existen más variables: para construir, para comprar un terreno, préstamos compartidos, entre otras.
+  </p>
+
+  <p>
+    Mediante nuestro apoyo, podrás acceder a más de 20 trámites diferentes, no sólo con tu afore, sino también aprovechando las opciones que brindan el IMSS, INFONAVIT, ISSSTE Y FOVISSSTE.
+  </p>
+</div>
+
+
+                                        <b>¿Por qué elegirnos?</b>
+                                        <br><br>
+                                        <ul data-aos="fade-up">
+                                            <li><strong>Asesoría especializada:</strong> Equipo de más de 50 expertos enfocados en pensiones, afores y trámites institucionales para ayudarte en cada paso.</li>
+                                            <li>    <strong>Acceso a más opciones:</strong> Te guiamos para aprovechar más de 20 trámites y beneficios disponibles en IMSS, INFONAVIT, ISSSTE Y FOVISSSTE.</li>
+                                            <li>    <strong>Información clara y confiable:</strong> Simplificamos procesos complejos para que entiendas tus derechos y tomes mejores decisiones para tu futuro financiero.</li>
+                                            <li>    <strong>Privacidad de tus datos y documentos:</strong> Protegemos tu información personal con altos estándares de seguridad y confidencialidad, garantizando el manejo responsable de tus datos en cada etapa del proceso.</li>
+                                            <li><strong>Transparencia en cada trámite:</strong> Te mantenemos informado en todo momento sobre avances, requisitos y tiempos estimados, asegurando claridad total y sin costos ocultos.</li>
+                                            <li><strong>Contrato de asesoría para todos los trámites:</strong> Formalizamos cada servicio mediante un contrato de asesoría que respalda acuerdos, alcances y responsabilidades para brindarte mayor seguridad y confianza.</li> 
+                                        
+                                        </ul>
+                                    <div data-aos="fade-up" data-aos-delay="300">
+                                        <a class="whatsapp-btn" href="https://wa.me/2215851569" target="_blank">
+                                            ¿Alguna duda? Escríbenos por WhatsApp
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/imgs/shape/6.png" alt="Zigzag Shape" class="shape">
+                        </div>
+                    </section>
+                    <!-- About area end -->
+
+                     <section class="who__area" style="background-image: url('assets/imgs/hero/00.png');">
+                        <div class="who__area_inner pt-5 pb-5" style="background-image: url('https://img.freepik.com/vector-gratis/concepto-isometrico-cultura-corporativa-gente-negocios-ensamblando-ilustracion-vector-rompecabezas_1284-75504.jpg?uid=R226113459&ga=GA1.1.2046338130.1761276142&semt=ais_hybrid&w=740&q=80');">
+                            <div class="container mt-xl-5 mb-xl-5">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-xl-5 col-lg-6">
+    <div class="who__left">
+        <div class="sec-title-wrap pb-3" data-aos="fade-up">
+            <h2 class="sec-subtitle">Nuestra Cultura</h2>
+            <h3 class="sec-subtitle heading-animation" style="color: #0c1014;">
+                Filosofía y compromiso que impulsan el bienestar financiero de los trabajadores
+                <br>
+            </h3>
+        </div>
+
+        <div class="who__features">
+
+            <div class="who__feature" data-aos="fade-up" data-aos-delay="300">
+                <div class="number">
+                    <span class="color-base">01</span>
+                </div>
+                <div class="who__content">
+                    <h4 class="title">Visión</h4>
+                    <p>
+                        Convertirnos en uno de los referentes principales en educación de seguridad social y pensiones, para que los trabajadores planeen su jubilación a tiempo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="who__feature" data-aos="fade-up" data-aos-delay="600">
+                <div class="number">
+                    <span class="color-base">02</span>
+                </div>
+                <div class="who__content">
+                    <h4 class="title">Misión</h4>
+                    <p>
+                        Brindar asesoría profesional a los trabajadores mexicanos, garantizando que cada cliente obtenga el retiro que se merece y aproveche todos los beneficios de su cuenta de afore.
+                    </p>
+                </div>
+            </div>
+
+            <div class="who__feature" data-aos="fade-up" data-aos-delay="900">
+                <div class="number">
+                    <span class="color-base">03</span>
+                </div>
+                <div class="who__content">
+                    <h4 class="title">Valores</h4>
+                    <ul>
+                       <li>Responsabilidad</li>
+                        <li>Compromiso</li>
+                        <li>Transparencia</li>
+                        <li>Empatía</li>
+                        <li>Eficacia</li>
+                        <li>Confidencialidad</li>
+                        <li>Innovación</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Resiliencia</li>
+                        <li>Diversidad e inclusión</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Counter area start -->
+                    <section class="counter__area bg-white">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="counter__inner">
+                                        <div class="counter__item" data-aos="fade-right">
+                                            <div class="counter__number counter_slow style2">640+
+                                            </div>
+                                            <h3 class="counter__title color-heading">Clientes satisfechos </h3>
+                                        </div>
+                                        <div class="counter__item" data-aos="fade-right" data-aos-delay="300">
+                                            <div class="counter__number counter_slow style2">6+
+                                            </div>
+                                            <h3 class="counter__title color-heading">Años de experiencia </h3>
+                                        </div>
+                                        <div class="counter__item" data-aos="fade-right" data-aos-delay="600">
+                                            <div class="counter__number counter_slow style2">710+
+                                            </div>  
+                                            <h3 class="counter__title color-heading">proyectos realizados </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Counter area end -->
+
+                    <section class="testimonial-area-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">
+                    Lo que opinan algunos de nuestros clientes
+                </h2>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- POSITIVOS -->
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            No sabía que tenía tantas opciones con mi afore hasta que recibí asesoría aquí.
+                            Todo el proceso fue claro y me ayudaron a entender mis derechos sin complicaciones.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Carlos Méndez</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            Me explicaron opciones de retiro que no conocía y me guiaron paso a paso.
+                            Excelente atención y seguimiento durante todo el trámite.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Fernanda Ríos</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            Desde la primera llamada me dieron confianza.
+                            Me explicaron cada detalle sin términos complicados.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Ricardo Torres</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            El acompañamiento fue constante durante todo el proceso.
+                            Siempre respondieron mis dudas con paciencia.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Mariana López</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEUTRO / CRÍTICA CONSTRUCTIVA -->
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            El proceso fue claro, aunque al inicio tardaron un poco en responder.
+                            Después de eso, el seguimiento fue adecuado.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Javier Hernández</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            La asesoría fue buena y profesional.
+                            Me hubiera gustado recibir más información comparativa al inicio.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Paola Castillo</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÁS POSITIVOS -->
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            Me sorprendió la transparencia con la que manejan todo.
+                            No prometen cosas irreales y explican cada paso con claridad.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Daniel Vargas</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            Pensaba que acceder a mis ahorros era complicado,
+                            pero hicieron que todo fuera sencillo y entendible.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Gabriela Navarro</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CRÍTICA LIGERA -->
+
+            <div class="col-lg-6">
+                <div class="single-testimonial-5 bg_dark_blue">
+                    <div class="testimonial-content-5">
+                        <p>
+                            El trámite tomó un poco más de lo que esperaba,
+                            pero al final cumplieron con lo prometido.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <h6>Eduardo Morales</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+   
+
+                    <!-- intro area start -->
+                    
+                    <!-- intro area end -->
+
+                    <!-- Contact area start -->
+                    <section class="contact__areas pt-150 pb-130">
+    <div class="container">
+        <div class="box-shadow p-xl-5 p-4 border-radius-50">
+            <div class="row">
+                
+                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-lg-0 mb-4">
+                    <img class="border-radius-25" 
+                         src="https://img.freepik.com/foto-gratis/mensaje-lectura-empresaria-telefono-movil_1262-2241.jpg?t=st=1771451252~exp=1771454852~hmac=74983ed8c7392a3b1577d69dfd44d5641d86bf47ccf9e8261bb6f46bfd173891&w=1480" 
+                         alt="Contacto">
+                </div>
+
+                <div class="col-xxl-6 col-xl-6 col-lg-6 align-self-center">
+                    <div class="contact__form contact__form-5 mt-0 pt-0 pb-0">
+
+                        <!-- NUEVO TEXTO -->
+                        <div class="mb-4">
+                            <h3 class="contact-title">Queremos conocer tu opinión</h3>
+                            <p class="contact-subtitle">
+                                Tu experiencia es muy importante para nosotros. 
+                                Compártenos tus comentarios y ayúdanos a seguir mejorando.
+                            </p>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <form action="#">
+                                <input type="text" name="name" placeholder="Nombre*" required>
+                                <input type="email" name="email" placeholder="E-mail*" required>
+                                <textarea name="comments" placeholder="Cuéntanos tu experiencia*" required></textarea>
+                                <button class="submit btn-rollover bg-base" type="submit">
+                                    Enviar <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+                    <!-- Contact area end -->
+
+                    <!-- Text Slider area start -->
+                    <!-- <section class="textslider__area bg-white p-0">
+                        <div class="textslider__inner">
+                            <div class="swiper textslider__active textslider_1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Unleash U <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Business <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Potential <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Experience <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Unleash U <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Consult <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+                    <!-- <section class="textslider__area bg-white p-0">
+                        <div class="textslider__inner">
+                            <div class="swiper textslider__active-3 textslider_2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Unleash U <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Business <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Potential <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Experience <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Unleash U <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="textslider__slide">
+                                            <h2>Consult <span>-</span></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+                    <!-- Text Slider area end -->
+
+                    <!-- FAQs area start -->
+                    <!-- <section class="faq__area bg-white pt-150 pb-120">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-xl-6">
+                                    <div class="sec-title-wrap mb-5 mb-lg-0" data-aos="fade-up">
+                                        <h2 class="sec-subtitle">Some Faq <span>Some Faq</span>
+                                        </h2>
+                                        <h3 class="sec-title heading-animation">Experience the <br> power</h3>
+                                        <div class="p-animation">
+                                            <p class="color-heading mb-5">Et purus duis sollicitudin dignissim habitant. <br> Egestas nulla quis venenatis cras sed eu massa eu <br> faucibus. Urna fusce aenean tortor </p>
+                                            <a class="bg-base btn-rollover border-radius-25" href="#">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-xl-6">
+                                    <div class="faq__list">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item style-2" data-aos="fade-up">
+                                                <h2 class="" id="headingOne">
+                                                    <button class="accordion-button color-heading" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How much agencies charge for their services ? </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p class="color-heading">It is a long established fact that a reader will be distr acted bioiiy the rea dablea content of a page when looking at its layout Thoiie point of using.It is a long this established fact that a reader</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item style-2" data-aos="fade-up" data-aos-delay="300">
+                                                <h2 class="" id="headingTwo">
+                                                    <button class="color-heading accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> How long does i digital agency to complete a project ? </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p class="color-heading">This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item style-2" data-aos="fade-up" data-aos-delay="600">
+                                                <h2 class="" id="headingThree">
+                                                    <button class="color-heading accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> What services do digital agencies typically offer ? </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p class="color-heading">This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item style-2" data-aos="fade-up" data-aos-delay="900">
+                                                <h2 class="" id="headingFour">
+                                                    <button class="color-heading accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> How do I know if a digital agency is business ? </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p class="color-heading">This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+                    <!-- FAQs area end -->
+
+                    <!-- Who we are area start -->
+                   
+                    <!-- Who we are area end -->
+
+                    <!-- Newsletter area start -->
+                    <!-- <section class="newsletter__area bg-light1 pt-120 pb-120">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 align-self-center">
+                                    <h2 class="sec-subtitle">Newsletter <span>Newsletter</span></h2>
+                                    <h3 class="sec-title heading-animation pb-0">Want to Be a Member?</h3>
+                                </div>
+                                <div class="col-xxl-7 col-xl-7 col-lg-7">
+                                    <div class="newsletter__right ps-xxl-5">
+                                        <form action="#" class="ps-xxl-5">
+                                            <input class="border-radius-50" type="email" name="email" placeholder="Enter Your Email">
+                                            <button type="submit" class="submit btn-rollover border-radius-50 border-radius-50-hover bg-base">Subscribe Now</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+                    <!-- Newsletter area end -->
+
+                    <!-- Blog area start -->
+                    <!-- <section class="blog__area pt-150 pb-150">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="sec-title-wrap" data-aos="fade-up">
+                                        <h2 class="sec-subtitle">Our Blog <span>Our Blog</span>
+                                        </h2>
+                                        <h3 class="sec-title heading-animation">Let’s Checkout our All <br> Letest News </h3>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12">
+                                    <div class="blog__list">
+                                        <article class="blog__item" data-aos="fade-up" data-aos-delay="300">
+                                            <div class="blog__thumb">
+                                                <div class="shine">
+                                                    <a href="blog-details.html">
+                                                        <img class="border-radius-25" src="assets/imgs/blog/1.png" alt="Thumbnail">
+                                                    </a>
+                                                </div>
+                                                <div class="date">16 <br> March </div>
+                                            </div>
+                                            <ul class="blog__meta">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa-regular fa-user"></i> By admin </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa-regular fa-comments"></i> Comments (05) </a>
+                                                </li>
+                                            </ul>
+                                            <a href="blog-details.html">
+                                                <h4 class="blog__title">Standard chunk of Lorem Ipsum Our Company</h4>
+                                            </a>
+                                            <a class="db-btn-arrow" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </article>
+                                        <article class="blog__item" data-aos="fade-up" data-aos-delay="600">
+                                            <div class="blog__thumb">
+                                                <div class="shine">
+                                                    <a href="blog-details.html">
+                                                        <img class="border-radius-25" src="assets/imgs/blog/2.png" alt="Thumbnail">
+                                                    </a>
+                                                </div>
+                                                <div class="date">16 <br> March </div>
+                                            </div>
+                                            <ul class="blog__meta">
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-regular fa-user"></i> By admin </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-regular fa-comments"></i> Comments (05) </a>
+                                                </li>
+                                            </ul>
+                                            <a href="blog-details.html">
+                                                <h4 class="blog__title">These cases are many simple and easy</h4>
+                                            </a>
+                                            <a class="db-btn-arrow" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </article>
+                                        <article class="blog__item" data-aos="fade-up" data-aos-delay="900">
+                                            <div class="blog__thumb">
+                                                <div class="shine">
+                                                    <a href="blog-details.html">
+                                                        <img class="border-radius-25" src="assets/imgs/blog/3.png" alt="Thumbnail">
+                                                    </a>
+                                                </div>
+                                                <div class="date">16 <br> March </div>
+                                            </div>
+                                            <ul class="blog__meta">
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-regular fa-user"></i> By admin </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-regular fa-comments"></i> Comments (05) </a>
+                                                </li>
+                                            </ul>
+                                            <a href="blog-details.html">
+                                                <h4 class="blog__title">The standard chunk of Ipsum Our Company</h4>
+                                            </a>
+                                            <a class="db-btn-arrow" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+                    <!-- Blog area end -->
+
+                </main>
+                <!-- Footer area start -->
+                <footer class="footer__area footer_two_area" aria-labelledby="footer-title">
+  <div class="footer__widgets">
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer__logo">
+            <a href="index.html" class="d-inline-flex align-items-center" aria-label="Ir al inicio">
+              <img src="assets/imgs/logo/Kapital8.png" alt="Kapital Consulting Group">
+            </a>
+
+            <p class="mt-3 mb-0 text-white-50">
+              © Kapital Consulting Group. Todos los derechos reservados
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer__service">
+            <h2 class="footer__title" id="footer-title">Contacto</h2>
+
+            <ul class="footer__contact list-unstyled m-0">
+              <li class="d-flex align-items-start gap-3">
+                <span class="footer__icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <address class="mb-0" style="color: white;">
+                  Torre Albertina<br>
+                  Calle Tehuacan Sur 60, La Paz,<br>
+                  Heroica Puebla de Zaragoza, Puebla
+                </address>
+              </li>
+
+              <li class="d-flex align-items-center gap-3 mt-3">
+                <span class="footer__icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <div class="d-flex flex-column">
+                  <a href="tel:+522215851569">(221) 585 1569</a>
+                </div>
+              </li>
+
+              <li class="d-flex align-items-center gap-3 mt-3">
+                <span class="footer__icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:proyectos@kapitalconsultinggroup.com">proyectos@kapitalconsultinggroup.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-12">
+          <div class="footer__service">
+            <h2 class="footer__title">Navegación</h2>
+            <ul class="footer__links list-unstyled m-0">
+              <li><a href="about.html">Nosotros</a></li>
+              <li><a href="services.html">Servicios</a></li>
+              <li><a href="projects.html">Proyectos</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="footer__bottom mt-4 pt-4 border-top border-light border-opacity-10">
+        <div class="row align-items-center gy-2">
+          <div class="col-md-6">
+            <p class="mb-0 text-white-50 small">
+              Torre Albertina · Puebla, México
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a class="small text-white-50" href="privacy.html">Aviso de privacidad</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+                <!-- Footer area end -->
+            </div>
+        </div>
+        <!-- All JS Files -->
+        <script src="assets/js/jquery-3.6.1.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/counter.js"></script>
+        <script src="assets/js/progressbar.js"></script>
+        <script src="assets/js/aos.js"></script>
+        <script src="assets/js/gsap.min.js"></script>
+        <script src="assets/js/SplitText.min.js"></script>
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <script src="assets/js/vanilla-tilt.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
