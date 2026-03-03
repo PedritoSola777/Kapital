@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" HTML5 Template">
+
+  <!-- Site Title -->
+  <title>Blog</title>
+
+  <!-- Site Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/FavK.png">
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+  <!-- All CSS Files -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+
+  <style>
+   :root{
+  --nav-h: 110px; /* ajusta si necesitas */
+}
+
+/* Fuerza que el header no sea absolute */
+.header__area,
+.header__area.pos-abs{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
+  z-index: 99999;
+
+  background: #0c1014; /* color sólido */
+  backdrop-filter: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Alineación interna */
+.header__inner{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Texto del menú en blanco */
+.main-menu > ul > li > a{
+  color: #fff !important;
+}
+
+.main-menu > ul > li > a:hover{
+  color: #c59d5f !important; /* color acento */
+}
+
+/* Empuja el contenido debajo del header */
+body{
+  padding-top: var(--nav-h);
+}
+
+/* Responsive */
+@media (max-width: 991px){
+  :root{ --nav-h: 90px; }
+}
+
+@media (max-width: 575px){
+  :root{ --nav-h: 78px; }
+}
+
+.breadcrumb__area{
+  width: 100%;
+  height: 50vh;          /* 🔥 menos alto */
+  min-height: 420px;     /* mantiene tamaño mínimo elegante */
+
+  background-image: url("assets/imgs/hero/blogBanner.jpg") !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;  /* mantenemos cover */
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* máscara negra */
+.breadcrumb__area::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6); /* intensidad de la máscara */
+  z-index: 1;
+}
+
+/* asegura que el contenido quede encima */
+.breadcrumb__area > *{
+  position: relative;
+  z-index: 2;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <!-- Scroll to top -->
+  <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+  <!-- Header area start -->
+  <header class="header__area pos-abs plr-100">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html"><img src="assets/imgs/logo/Kapital8.png" alt="Site Logo" style="width: 250px;"></a>
+      </div>
+      <div class="header__menu">
+        <nav class="main-menu">
+          <ul>
+  <li><a href="index.html">Inicio</a></li>
+
+  <li><a href="contact.html">Contacto</a></li>
+
+  <li><a href="privacy.html">Aviso de privacidad</a></li>
+
+  <li><a href="tramites.html">Trámites</a></li>
+
+  <li><a href="faq.html">Preguntas frecuentes</a></li>
+
+  <li><a href="blog.html">Blog</a></li>
+</ul>
+        </nav>
+      </div>
+      <div class="header__others">
+        <div class="header__search">
+          <!-- <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+          <button class="search-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="header__offcanvas">
+          <button class="menu_icon">
+            <img src="assets/imgs/icon/menu.png" alt="Menu Icon">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="search__form">
+    <form action="#">
+      <input type="text" name="s" placeholder="Search...">
+    </form>
+  </div>
+  <!-- Header area end -->
+
+  <!-- Offcanvas area start -->
+   <div class="offcanvas__area">
+  <div class="offcanvas__inner">
+    <div class="offcanvas__top">
+      <img src="assets/imgs/logo/Kapital8.png" alt="Logo">
+      <button id="offcanvas_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="offcanvas__search">
+      <form action="#">
+        <input type="text" placeholder="Buscar..." name="s">
+      </form>
+    </div>
+
+    <div class="offcanvas__menu">
+      <div class="offcanvas-menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="privacy.html">Aviso de privacidad</a></li>
+          <li><a href="tramites.html">Trámites</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="offcanvas__map">
+      <iframe
+        src="https://www.google.com/maps?q=Torre+Albertina+Puebla&output=embed"
+        loading="lazy"></iframe>
+    </div>
+
+    <div class="offcanvas__btm">
+      <div class="footer__address-3">
+        <ul>
+          <li>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <p class="text-white">
+              Torre Albertina<br>
+              Calle Tehuacan Sur 60, La Paz<br>
+              Heroica Puebla de Zaragoza, Puebla
+            </p>
+          </li>
+
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div>
+              <a href="tel:+5217444574309">+52 1 744 457 4309</a>
+              <a href="tel:+522215851569">(221) 585 1569</a>
+            </div>
+          </li>
+
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <a href="mailto:proyectos@kapitalconsultinggroup.com">proyectos@kapitalconsultinggroup.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__social-3">
+        <ul>
+          <!-- <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Offcanvas area end -->
+
+
+  <main>
+
+    <!-- Breadcrumb area start -->
+    <section class="breadcrumb__area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="breadcrumb__inner">
+              <div class="breadcrumb__left">
+                <h1 class="breadcrumb__title" style="color: white;">Blog del derechohabiente</h1>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Breadcrumb area end -->
+
+    <!-- blog area start -->
+    <section class="blog__details pt-150 pb-150">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="blog__single">
+              <div class="blog__thumb-inner">
+                <img src="https://oem.com.mx/elsoldeparral/img/28748959/1772475710/BASE_LANDSCAPE/124/image.webp 124w, https://oem.com.mx/elsoldeparral/img/28748959/1772475710/BASE_LANDSCAPE/240/image.webp 240w, https://oem.com.mx/elsoldeparral/img/28748959/1772475710/BASE_LANDSCAPE/360/image.webp 360w, https://oem.com.mx/elsoldeparral/img/28748959/1772475710/BASE_LANDSCAPE/480/image.webp 480w, https://oem.com.mx/elsoldeparral/img/28748959/1772475710/BASE_LANDSCAPE/768/image.webp 768w, https://oem.com.mx/elsoldeparral/img/28748959/1772475710/BASE_LANDSCAPE/1024/image.webp 1024w, https://oem.com.mx/elsoldeparral/img/28748959/1772475710/BASE_LANDSCAPE/1200/image.webp 1200w" alt="blog-img" data-lag="0.3">
+              </div>
+              <div class="blog__content-inner">
+               
+                <h2>Acuerdan municipio, COESVI e Infonavit ruta estratégica para detonar Vivienda del Bienestar en Parral</h2>
+                <br>
+                  <p>
+El gobierno municipal de Hidalgo del Parral, en el estado de Chihuahua, dio un paso importante para atender la demanda de vivienda al sostener una mesa de trabajo con representantes de la Comisión Estatal de Vivienda, Suelo e Infraestructura (COESVI) y del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (Infonavit). El objetivo central de este encuentro fue establecer una ruta estratégica que permita fortalecer y detonar el programa Vivienda del Bienestar en esa región, así como consolidar la reinserción de vivienda social a través de acciones coordinadas entre los distintos órdenes de gobierno. :contentReference[oaicite:1]{index=1}<br><br>
+
+La reunión fue encabezada por el presidente municipal, Salvador Calderón, junto con el director general de COESVI, José Antonio Chávez Rodríguez, y el delegado regional del Infonavit en Chihuahua, Julio César Fajardo Álvarez. En el diálogo se coincidió en que la vivienda debe ser un eje prioritario del desarrollo social y económico en Parral, y que para lograrlo es fundamental diseñar estrategias integrales que impulsen tanto la construcción de nuevas unidades como la recuperación y rehabilitación de aquellas que se encuentran en desuso. :contentReference[oaicite:2]{index=2}<br><br>
+
+Dentro de las propuestas que surgieron se contempla realizar una revisión técnica detallada para identificar oportunidades concretas de intervención y diseñar un plan operativo que facilite la implementación de programas habitacionales con impacto social. La alianza busca también reactivar espacios habitacionales que actualmente no se utilizan, lo que puede contribuir a la reconstrucción del tejido urbano y social en sectores que enfrentan rezago. :contentReference[oaicite:3]{index=3}<br><br>
+
+En el encuentro participaron funcionarios clave de Infonavit, entre ellos especialistas y gerentes técnicos regionales que aportaron propuestas prácticas y operativas para optimizar los mecanismos de apoyo a las familias parralenses. La intención de esta colaboración es garantizar que los recursos, tanto federales como estatales y municipales, se aprovechen de manera eficiente para beneficiar a quienes más lo necesitan. :contentReference[oaicite:4]{index=4}<br><br>
+
+La ruta estratégica acordada está orientada a lograr que más personas accedan a una vivienda digna, mediante esquemas de financiamiento justos, proyectos de construcción y la reintegración de viviendas disponibles que pueden ser habitadas nuevamente. Las autoridades resaltaron que este tipo de iniciativas no sólo abordan la necesidad de contar con un hogar, sino que también generan mayor certeza patrimonial y contribuyen a la cohesión social en el municipio. :contentReference[oaicite:5]{index=5}<br><br>
+
+Además, este esfuerzo conjunto reafirma el compromiso de las autoridades locales y estatales de responder a las necesidades reales de la ciudadanía, impulsando políticas públicas con enfoque social y construyendo soluciones que atiendan de manera efectiva el rezago de vivienda en Parral. La coordinación interinstitucional permitirá avanzar en la consolidación de programas habitacionales que beneficien a un mayor número de familias durante los próximos meses. :contentReference[oaicite:6]{index=6}
+</p>
+                
+                </div>
+               
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- /blog area end -->
+
+
+
+  </main>
+
+
+  <!-- Footer area start -->
+ <footer class="footer__area footer_two_area" aria-labelledby="footer-title">
+  <div class="footer__widgets">
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer__logo">
+            <a href="index.html" class="d-inline-flex align-items-center" aria-label="Ir al inicio">
+              <img src="assets/imgs/logo/Kapital8.png" alt="Kapital Consulting Group">
+            </a>
+
+            <p class="mt-3 mb-0 text-white-50">
+              © Kapital Consulting Group. Todos los derechos reservados
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer__service">
+            <h2 class="footer__title" id="footer-title">Contacto</h2>
+
+            <ul class="footer__contact list-unstyled m-0">
+              <li class="d-flex align-items-start gap-3">
+                <span class="footer__icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <address class="mb-0" style="color: white;">
+                  Torre Albertina<br>
+                  Calle Tehuacan Sur 60, La Paz,<br>
+                  Heroica Puebla de Zaragoza, Puebla
+                </address>
+              </li>
+
+              <li class="d-flex align-items-center gap-3 mt-3">
+                <span class="footer__icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <div class="d-flex flex-column">
+                  <a href="tel:+522215851569">(221) 585 1569</a>
+                </div>
+              </li>
+
+              <li class="d-flex align-items-center gap-3 mt-3">
+                <span class="footer__icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:proyectos@kapitalconsultinggroup.com">proyectos@kapitalconsultinggroup.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-12">
+          <div class="footer__service">
+            <h2 class="footer__title">Navegación</h2>
+            <ul class="footer__links list-unstyled m-0">
+              <li><a href="about.html">Nosotros</a></li>
+              <li><a href="services.html">Servicios</a></li>
+              <li><a href="projects.html">Proyectos</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="footer__bottom mt-4 pt-4 border-top border-light border-opacity-10">
+        <div class="row align-items-center gy-2">
+          <div class="col-md-6">
+            <p class="mb-0 text-white-50 small">
+              Torre Albertina · Puebla, México
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a class="small text-white-50" href="privacy.html">Aviso de privacidad</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Footer area end -->
+
+</div>
+</div>
+
+
+  <!-- All JS Files -->
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/vanilla-tilt.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -10915,3 +10915,16 @@ HOME FIVE FOOTER
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 }
+
+@media (min-width: 992px) {
+  .header__offcanvas,
+  .header__offcanvas .menu_icon {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header__offcanvas {
+    display: flex;
+  }
+}
