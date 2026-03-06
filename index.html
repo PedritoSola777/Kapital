@@ -8,7 +8,7 @@
         <!-- Site Title -->
         <title>Kapital Consulting Group</title>
         <!-- Site Favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/imgs/logo/FavK.png">
+        <link rel="shortcut icon" href="assets/imgs/logo/FavK.png" type="image/x-icon">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -166,6 +166,127 @@ body{
 
        </style>
        
+       <style>
+        .testimonials-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.testimonials-section .section-title {
+    color: #0d2b4d;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.testimonial-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid #dfe5ec;
+    border-radius: 4px;
+    padding: 28px 24px 24px;
+    box-shadow: 0 8px 24px rgba(13, 43, 77, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(13, 43, 77, 0.1);
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.testimonial-stars .star.filled {
+    color: #f5c542;
+}
+
+.testimonial-stars .star.empty {
+    color: #d7dde5;
+}
+
+.testimonial-text {
+    color: #25364a;
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 18px;
+    min-height: 132px;
+}
+
+.testimonial-link {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #2b8c97;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.testimonial-link:hover {
+    color: #1f6b74;
+}
+
+.testimonial-author h6 {
+    margin: 0;
+    color: #6c7a89;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+@media (max-width: 991.98px) {
+    .testimonials-section {
+        padding: 70px 0;
+    }
+
+    .testimonial-text {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .testimonials-section {
+        padding: 55px 0;
+    }
+
+    .testimonials-section .section-title {
+        font-size: 28px;
+    }
+
+    .testimonial-card {
+        padding: 24px 20px 20px;
+    }
+
+    .testimonial-stars {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 14px;
+    }
+
+    .testimonial-link {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    .testimonial-author h6 {
+        font-size: 14px;
+    }
+}
+       </style>
 
     </head>
     <body>
@@ -587,6 +708,10 @@ body{
                     <!-- Counter area end -->
 
                     <section class="testimonial-area-5">
+    <section class="testimonials-section">
+    <div class="container">
+
+        <section class="testimonials-section">
     <div class="container">
 
         <div class="row">
@@ -597,144 +722,425 @@ body{
             </div>
         </div>
 
-        <div class="row">
+        <div class="row g-4">
 
-            <!-- POSITIVOS -->
-
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            No sabía que tenía tantas opciones con mi afore hasta que recibí asesoría aquí.
-                            Todo el proceso fue claro y me ayudaron a entender mis derechos sin complicaciones.
-                        </p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="4 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
                     </div>
-                    <div class="testimonial-meta">
+                    <p class="testimonial-text">
+                        Es la segunda vez que me ayudan a retirar de mi afore, pero esta vez solo pude retirar como 5000.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Cliente anónimo</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="4 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Los recomiendo. 4 estrellas. Sí te ayudan con los trámites, te cobran comisiones competitivas; tal vez puntos a mejorar son que por las tardes tardan más en responder en atención a clientes y que no tienen sucursales en el norte.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Cliente anónimo</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="2 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        El asesor que me estaba atendiendo no sabía bien los procesos, no sé si era nuevo o algo así, pero no me pudo apoyar como esperaba.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Cliente anónimo</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="2 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        A mí me tocó un asesor desesperado, no me supo dar bien la información y por eso ya no seguí con el trámite.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Cliente anónimo</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="4 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Yo conocí esta agencia por mi esposo y al momento no tengo quejas, hemos podido retirar del afore sin problema.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Cliente anónimo</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="2 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Yo yevo más de un mes con lo de mi pencion, es tardado y se debe de tener mucha paciencia.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Cliente anónimo</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="1 estrella">
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Desde el mes pasado estoy intentando tramitar mi pensión, pero a la fecha no me han podido resolver; yo sé que es tardado, pero ya se me hizo mucho tiempo.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Cliente anónimo</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        No sabía que tenía tantas opciones con mi afore hasta que recibí asesoría aquí. Todo el proceso fue claro y me ayudaron a entender mis derechos sin complicaciones.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
                         <h6>Carlos Méndez</h6>
                     </div>
-                </div>
+                </article>
             </div>
 
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            Me explicaron opciones de retiro que no conocía y me guiaron paso a paso.
-                            Excelente atención y seguimiento durante todo el trámite.
-                        </p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
                     </div>
-                    <div class="testimonial-meta">
+                    <p class="testimonial-text">
+                        Me explicaron opciones de retiro que no conocía y me guiaron paso a paso. Excelente atención y seguimiento durante todo el trámite.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
                         <h6>Fernanda Ríos</h6>
                     </div>
-                </div>
+                </article>
             </div>
 
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            Desde la primera llamada me dieron confianza.
-                            Me explicaron cada detalle sin términos complicados.
-                        </p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
                     </div>
-                    <div class="testimonial-meta">
-                        <h6>Ricardo Torres</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            El acompañamiento fue constante durante todo el proceso.
-                            Siempre respondieron mis dudas con paciencia.
-                        </p>
-                    </div>
-                    <div class="testimonial-meta">
+                    <p class="testimonial-text">
+                        El acompañamiento fue constante durante todo el proceso. Siempre respondieron mis dudas con paciencia.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
                         <h6>Mariana López</h6>
                     </div>
-                </div>
+                </article>
             </div>
 
-            <!-- NEUTRO / CRÍTICA CONSTRUCTIVA -->
-
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            El proceso fue claro, aunque al inicio tardaron un poco en responder.
-                            Después de eso, el seguimiento fue adecuado.
-                        </p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
                     </div>
-                    <div class="testimonial-meta">
-                        <h6>Javier Hernández</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            La asesoría fue buena y profesional.
-                            Me hubiera gustado recibir más información comparativa al inicio.
-                        </p>
-                    </div>
-                    <div class="testimonial-meta">
-                        <h6>Paola Castillo</h6>
-                    </div>
-                </div>
-            </div>
-
-            <!-- MÁS POSITIVOS -->
-
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            Me sorprendió la transparencia con la que manejan todo.
-                            No prometen cosas irreales y explican cada paso con claridad.
-                        </p>
-                    </div>
-                    <div class="testimonial-meta">
+                    <p class="testimonial-text">
+                        Me sorprendió la transparencia con la que manejan todo. No prometen cosas irreales y explican cada paso con claridad.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
                         <h6>Daniel Vargas</h6>
                     </div>
-                </div>
+                </article>
             </div>
 
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            Pensaba que acceder a mis ahorros era complicado,
-                            pero hicieron que todo fuera sencillo y entendible.
-                        </p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
                     </div>
-                    <div class="testimonial-meta">
+                    <p class="testimonial-text">
+                        Pensaba que acceder a mis ahorros era complicado, pero hicieron que todo fuera sencillo y entendible.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
                         <h6>Gabriela Navarro</h6>
                     </div>
-                </div>
-            </div>
-
-            <!-- CRÍTICA LIGERA -->
-
-            <div class="col-lg-6">
-                <div class="single-testimonial-5 bg_dark_blue">
-                    <div class="testimonial-content-5">
-                        <p>
-                            El trámite tomó un poco más de lo que esperaba,
-                            pero al final cumplieron con lo prometido.
-                        </p>
-                    </div>
-                    <div class="testimonial-meta">
-                        <h6>Eduardo Morales</h6>
-                    </div>
-                </div>
+                </article>
             </div>
 
         </div>
     </div>
+</section>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        No sabía que tenía tantas opciones con mi afore hasta que recibí asesoría aquí.
+                        Todo el proceso fue claro y me ayudaron a entender mis derechos sin complicaciones.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Carlos Méndez</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Me explicaron opciones de retiro que no conocía y me guiaron paso a paso.
+                        Excelente atención y seguimiento durante todo el trámite.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Fernanda Ríos</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Desde la primera llamada me dieron confianza.
+                        Me explicaron cada detalle sin términos complicados.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Ricardo Torres</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        El acompañamiento fue constante durante todo el proceso.
+                        Siempre respondieron mis dudas con paciencia.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Mariana López</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="3 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        El proceso fue claro, aunque al inicio tardaron un poco en responder.
+                        Después de eso, el seguimiento fue adecuado.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Javier Hernández</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="4 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        La asesoría fue buena y profesional.
+                        Me hubiera gustado recibir más información comparativa al inicio.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Paola Castillo</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Me sorprendió la transparencia con la que manejan todo.
+                        No prometen cosas irreales y explican cada paso con claridad.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Daniel Vargas</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Pensaba que acceder a mis ahorros era complicado,
+                        pero hicieron que todo fuera sencillo y entendible.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Gabriela Navarro</h6>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="3 estrellas">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        El trámite tomó un poco más de lo que esperaba,
+                        pero al final cumplieron con lo prometido.
+                    </p>
+                    <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                    <div class="testimonial-author">
+                        <h6>Eduardo Morales</h6>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
 </section>
    
 
@@ -755,30 +1161,53 @@ body{
                 </div>
 
                 <div class="col-xxl-6 col-xl-6 col-lg-6 align-self-center">
-                    <div class="contact__form contact__form-5 mt-0 pt-0 pb-0">
+    <div class="contact__form contact__form-5 mt-0 pt-0 pb-0">
 
-                        <!-- NUEVO TEXTO -->
-                        <div class="mb-4">
-                            <h3 class="contact-title">Queremos conocer tu opinión</h3>
-                            <p class="contact-subtitle">
-                                Tu experiencia es muy importante para nosotros. 
-                                Compártenos tus comentarios y ayúdanos a seguir mejorando.
-                            </p>
-                        </div>
+        <div class="mb-4">
+            <h3 class="contact-title">Queremos conocer tu opinión</h3>
+            <p class="contact-subtitle">
+                Tu experiencia es muy importante para nosotros. 
+                Compártenos tus comentarios y ayúdanos a seguir mejorando.
+            </p>
+        </div>
 
-                        <div data-aos="fade-up" data-aos-delay="600">
-                            <form action="#">
-                                <input type="text" name="name" placeholder="Nombre*" required>
-                                <input type="email" name="email" placeholder="E-mail*" required>
-                                <textarea name="comments" placeholder="Cuéntanos tu experiencia*" required></textarea>
-                                <button class="submit btn-rollover bg-base" type="submit">
-                                    Enviar <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </form>
-                        </div>
+        <div data-aos="fade-up" data-aos-delay="600">
 
-                    </div>
-                </div>
+            <form 
+                name="opiniones"
+                method="POST"
+                data-netlify="true"
+                action="/Gracias/">
+
+                <input type="hidden" name="form-name" value="opiniones">
+
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Nombre*" 
+                    required>
+
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="E-mail*" 
+                    required>
+
+                <textarea 
+                    name="comments" 
+                    placeholder="Cuéntanos tu experiencia*" 
+                    required></textarea>
+
+                <button class="submit btn-rollover bg-base" type="submit">
+                    Enviar <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
 
             </div>
         </div>
