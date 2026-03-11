@@ -1,554 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracias</title>
-    <link rel="shortcut icon" href="assets/imgs/logo/FavK.png" type="image/x-icon">
-
-
-   <style>
-    .success-wrapper {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #eaf4f6 0%, #dfe8ef 100%);
-    box-sizing: border-box;
-}
-
-.success-card {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    width: 100%;
-    max-width: 920px;
-    background: #ffffff;
-    border: 6px solid #7ec8a0;
-    border-radius: 26px;
-    overflow: hidden;
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
-}
-
-.success-close {
-    position: absolute;
-    top: -14px;
-    right: -14px;
-    width: 52px;
-    height: 52px;
-    border: none;
-    border-radius: 50%;
-    background: #7ec8a0;
-    color: #ffffff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    z-index: 10;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
-}
-
-.success-left {
-    position: relative;
-    min-height: 360px;
-    background: #59b7bf;
-    overflow: hidden;
-}
-
-.success-right {
-    background: #1d486f;
-    padding: 52px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.success-right h2 {
-    margin: 0 0 18px;
-    color: #b9e68d;
-    font-size: 42px;
-    line-height: 1.15;
-    font-weight: 700;
-}
-
-.success-right p {
-    margin: 0 0 30px;
-    color: #edf3f8;
-    font-size: 17px;
-    line-height: 1.75;
-    max-width: 470px;
-}
-
-.success-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    min-width: 190px;
-    padding: 14px 30px;
-    border-radius: 999px;
-    background: linear-gradient(180deg, #b8e28d 0%, #92cd80 100%);
-    color: #1d486f;
-    font-size: 22px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.45), 0 6px 0 rgba(0, 0, 0, 0.12);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.success-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.45), 0 8px 0 rgba(0, 0, 0, 0.12);
-}
-
-.sun {
-    position: absolute;
-    top: 46px;
-    right: 54px;
-    width: 48px;
-    height: 48px;
-    border: 6px solid #f2ad3d;
-    border-radius: 50%;
-    box-sizing: border-box;
-}
-
-.cloud {
-    position: absolute;
-    background: #f5f5f2;
-    border-radius: 999px;
-}
-
-.cloud::before,
-.cloud::after {
-    content: "";
-    position: absolute;
-    background: #f5f5f2;
-    border-radius: 50%;
-}
-
-.cloud1 {
-    top: 34px;
-    left: 44px;
-    width: 58px;
-    height: 18px;
-}
-
-.cloud1::before {
-    width: 22px;
-    height: 22px;
-    left: 8px;
-    top: -9px;
-}
-
-.cloud1::after {
-    width: 16px;
-    height: 16px;
-    left: 28px;
-    top: -6px;
-}
-
-.cloud2 {
-    bottom: 28px;
-    left: 46px;
-    width: 52px;
-    height: 16px;
-}
-
-.cloud2::before {
-    width: 20px;
-    height: 20px;
-    left: 7px;
-    top: -8px;
-}
-
-.cloud2::after {
-    width: 15px;
-    height: 15px;
-    left: 26px;
-    top: -6px;
-}
-
-.cloud3 {
-    bottom: 48px;
-    right: 54px;
-    width: 56px;
-    height: 16px;
-}
-
-.cloud3::before {
-    width: 20px;
-    height: 20px;
-    left: 7px;
-    top: -9px;
-}
-
-.cloud3::after {
-    width: 15px;
-    height: 15px;
-    left: 28px;
-    top: -6px;
-}
-
-.envelope {
-    position: absolute;
-    left: 50%;
-    top: 56%;
-    width: 225px;
-    height: 175px;
-    transform: translate(-50%, -50%) rotate(-8deg);
-}
-
-.env-back {
-    position: absolute;
-    inset: 0;
-    background: #efb24d;
-    clip-path: polygon(0 28%, 50% 0, 100% 28%, 100% 100%, 0 100%);
-    z-index: 0;
-}
-
-.env-front {
-    position: absolute;
-    inset: 0;
-    background: #f4bb56;
-    clip-path: polygon(0 28%, 50% 62%, 100% 28%, 100% 100%, 0 100%);
-    z-index: 2;
-}
-
-.letter {
-    position: absolute;
-    top: -8px;
-    left: 45px;
-    width: 134px;
-    height: 104px;
-    background: #ffffff;
-    padding: 12px;
-    box-sizing: border-box;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-}
-
-.line {
-    height: 8px;
-    margin-bottom: 8px;
-    border-radius: 2px;
-}
-
-.green {
-    background: #82c98c;
-}
-
-.blue {
-    background: #294d76;
-}
-
-.short {
-    width: 58%;
-}
-
-.medium {
-    width: 74%;
-}
-
-@media (max-width: 1024px) {
-    .success-card {
-        grid-template-columns: 1fr 1fr;
-        max-width: 760px;
-    }
-
-    .success-right {
-        padding: 42px 30px;
-    }
-
-    .success-right h2 {
-        font-size: 33px;
-    }
-
-    .success-right p {
-        font-size: 16px;
-        line-height: 1.7;
-    }
-
-    .envelope {
-        width: 195px;
-        height: 150px;
-    }
-
-    .letter {
-        width: 112px;
-        height: 88px;
-        left: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .success-wrapper {
-        padding: 28px 16px;
-    }
-
-    .success-card {
-        grid-template-columns: 1fr;
-        max-width: 520px;
-    }
-
-    .success-left {
-        min-height: 235px;
-    }
-
-    .success-right {
-        padding: 34px 24px 30px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .success-right h2 {
-        font-size: 29px;
-    }
-
-    .success-right p {
-        max-width: 100%;
-        font-size: 15px;
-    }
-
-    .success-btn {
-        min-width: 170px;
-        font-size: 18px;
-        padding: 12px 24px;
-    }
-
-    .sun {
-        top: 28px;
-        right: 34px;
-        width: 38px;
-        height: 38px;
-        border-width: 5px;
-    }
-
-    .cloud1 {
-        top: 28px;
-        left: 28px;
-    }
-
-    .cloud2 {
-        bottom: 24px;
-        left: 28px;
-    }
-
-    .cloud3 {
-        bottom: 40px;
-        right: 34px;
-    }
-
-    .envelope {
-        width: 175px;
-        height: 132px;
-    }
-
-    .letter {
-        width: 100px;
-        height: 76px;
-        left: 35px;
-        top: -6px;
-        padding: 10px;
-    }
-
-    .line {
-        height: 7px;
-        margin-bottom: 7px;
-    }
-
-    .success-close {
-        width: 46px;
-        height: 46px;
-        font-size: 28px;
-        top: -10px;
-        right: -10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .success-wrapper {
-        padding: 20px 12px;
-    }
-
-    .success-card {
-        border-width: 5px;
-        border-radius: 18px;
-    }
-
-    .success-left {
-        min-height: 190px;
-    }
-
-    .success-right {
-        padding: 28px 18px 24px;
-    }
-
-    .success-right h2 {
-        font-size: 24px;
-        line-height: 1.2;
-    }
-
-    .success-right p {
-        font-size: 14px;
-        line-height: 1.65;
-        margin-bottom: 24px;
-    }
-
-    .success-btn {
-        width: 100%;
-        max-width: 210px;
-        min-width: unset;
-        font-size: 16px;
-        padding: 12px 20px;
-    }
-
-    .sun {
-        width: 30px;
-        height: 30px;
-        border-width: 4px;
-        top: 24px;
-        right: 24px;
-    }
-
-    .cloud1 {
-        width: 46px;
-        height: 14px;
-        top: 22px;
-        left: 22px;
-    }
-
-    .cloud1::before {
-        width: 18px;
-        height: 18px;
-        left: 6px;
-        top: -7px;
-    }
-
-    .cloud1::after {
-        width: 13px;
-        height: 13px;
-        left: 22px;
-        top: -5px;
-    }
-
-    .cloud2 {
-        width: 42px;
-        height: 13px;
-        bottom: 20px;
-        left: 22px;
-    }
-
-    .cloud2::before {
-        width: 16px;
-        height: 16px;
-        left: 6px;
-        top: -6px;
-    }
-
-    .cloud2::after {
-        width: 12px;
-        height: 12px;
-        left: 21px;
-        top: -5px;
-    }
-
-    .cloud3 {
-        width: 44px;
-        height: 13px;
-        bottom: 30px;
-        right: 24px;
-    }
-
-    .cloud3::before {
-        width: 16px;
-        height: 16px;
-        left: 6px;
-        top: -7px;
-    }
-
-    .cloud3::after {
-        width: 12px;
-        height: 12px;
-        left: 22px;
-        top: -5px;
-    }
-
-    .envelope {
-        width: 145px;
-        height: 110px;
-    }
-
-    .letter {
-        width: 82px;
-        height: 64px;
-        left: 29px;
-        top: -4px;
-        padding: 8px;
-    }
-
-    .line {
-        height: 5px;
-        margin-bottom: 6px;
-    }
-
-    .success-close {
-        width: 42px;
-        height: 42px;
-        font-size: 24px;
-        top: -8px;
-        right: -8px;
-    }
-}
-   </style>
-
+        <link rel="shortcut icon" href="assets/imgs/logo/FavK.png" type="image/x-icon">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef1f5;
+        }
+
+        .success-wrapper {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            background: #eef1f5;
+        }
+
+        .success-card {
+            position: relative;
+            width: 100%;
+            max-width: 430px;
+            background: #ffffff;
+            border: 1px solid #d9dee7;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
+            padding: 34px 32px 30px;
+        }
+
+        .success-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #b8c0cc;
+            background: #ffffff;
+            color: #7b8794;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .success-close:hover {
+            border-color: #0f2747;
+            color: #0f2747;
+        }
+
+        .success-card h2 {
+            margin: 0 0 18px;
+            font-size: 34px;
+            line-height: 1.1;
+            font-weight: 700;
+            color: #0f2747;
+            letter-spacing: -0.5px;
+        }
+
+        .success-card p {
+            margin: 0 0 18px;
+            font-size: 16px;
+            line-height: 1.65;
+            color: #334155;
+            max-width: 300px;
+        }
+
+        .success-card p:last-of-type {
+            margin-bottom: 28px;
+        }
+
+        .success-card strong,
+        .success-card a.inline-link {
+            color: #0f2747;
+        }
+
+        .success-card a.inline-link {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .success-card a.inline-link:hover {
+            text-decoration: underline;
+        }
+
+        .success-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 52px;
+            padding: 14px 20px;
+            border: 2px solid #0f2747;
+            background: #0f2747;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+        }
+
+        .success-btn:hover {
+            background: #ffffff;
+            color: #0f2747;
+        }
+
+        @media (max-width: 480px) {
+            .success-wrapper {
+                padding: 16px;
+            }
+
+            .success-card {
+                padding: 28px 22px 24px;
+            }
+
+            .success-card h2 {
+                font-size: 28px;
+                margin-bottom: 16px;
+            }
+
+            .success-card p {
+                font-size: 15px;
+                max-width: 100%;
+            }
+
+            .success-btn {
+                min-height: 48px;
+                font-size: 13px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
-<div class="success-wrapper">
 
-  <div class="success-card">
+    <div class="success-wrapper">
+        <div class="success-card">
 
+            <a href="../index.html" class="success-close" aria-label="Cerrar">×</a>
 
-    <div class="success-left">
+            <h2>¡Gracias!</h2>
 
-      <div class="sun"></div>
+            <p>
+                Hemos recibido su solicitud correctamente y nuestro equipo dará seguimiento a su mensaje a la brevedad posible.
+            </p>
 
-      <div class="cloud cloud1"></div>
-      <div class="cloud cloud2"></div>
-      <div class="cloud cloud3"></div>
+            <p>
+                Si desea información adicional o necesita actualizar algún dato, puede escribirnos a
+                <a href="mailto:clientes@kapitalconsultinggroup.com" class="inline-link">clientes@kapitalconsultinggroup.com</a>.
+            </p>
 
-      <div class="envelope">
-        <div class="letter">
-          <div class="line green"></div>
-          <div class="line blue short"></div>
-          <div class="line blue"></div>
-          <div class="line green medium"></div>
+            <a href="../index.html" class="success-btn">Ir al inicio</a>
         </div>
-
-        <div class="env-back"></div>
-        <div class="env-front"></div>
-      </div>
-
     </div>
-
-    <div class="success-right">
-
-      <h2>¡Hemos recibido tu mensaje!</h2>
-
-      <p>
-        Gracias por ponerte en contacto con nosotros. Hemos recibido tu
-        información correctamente y en breve estaremos dando seguimiento
-        a tu solicitud.
-      </p>
-
-      <a href="../index.html" class="success-btn">Ir al inicio</a>
-
-    </div>
-
-  </div>
-
-</div>
 
 </body>
 </html>
