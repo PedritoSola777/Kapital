@@ -10958,6 +10958,36 @@ HOME FIVE FOOTER
     background-position: center;
 }
 
+
+.cta-banner3 {
+    position: relative;
+    width: 100%;
+    min-height: 55vh; /* 🔥 más alto y responsive */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background-image: url('../imgs/hero/index4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-banner4 { 
+    position: relative;
+    width: 100%;
+    min-height: 55vh; /* 🔥 más alto y responsive */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background-image: url('../imgs/hero/index3.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* Overlay negro elegante */
 .cta-overlay {
     position: absolute;

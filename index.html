@@ -289,20 +289,60 @@ body{
        </style>
 
 
-       <style>
-        /* ===== INTRO ===== */
-.about-switch-intro {
-    margin: 20px 0 18px;
-    padding: 16px 18px;
-    border-radius: 12px;
-    background: rgba(182, 153, 116, 0.08);
+       <style>/* ===== SECCIÓN GENERAL (WRAPPER TIPO CARD) ===== */
+.about__area { 
+background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 20px; 
+}
+
+.about__area .container {
+    background: linear-gradient(135deg, #f5efe6 0%, #efe6d8 100%);
+    border-radius: 30px;
+    padding: 50px 40px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(182, 153, 116, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.about__area .container::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, rgba(182,153,116,0.18) 0%, transparent 70%);
+    z-index: 0;
+}
+
+
+
+.about__area .row {
+    position: relative;
+    z-index: 2;
+}
+
+.about__area .shape {
+    opacity: 0.08;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* ===== INTRO ===== */
+.about-switch-intro {
+    margin: 22px 0 20px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(182, 153, 116, 0.12), rgba(182, 153, 116, 0.05));
+    border: 1px solid rgba(182, 153, 116, 0.22);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .about-switch-intro p {
     margin-bottom: 0;
     color: #444;
-    line-height: 1.6;
+    line-height: 1.75;
+    font-size: 15px;
 }
 
 /* ===== BUTTONS ===== */
@@ -310,113 +350,223 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 .about-switch-buttons .btn {
     border-radius: 999px;
-    padding: 10px 18px;
-    font-weight: 500;
+    padding: 11px 20px;
+    font-weight: 600;
     font-size: 14px;
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
     border: 1px solid #b69974;
     cursor: pointer;
-}
-
-/* Estado por defecto (outline) */
-.about-switch-buttons .btn {
-    background: transparent;
+    background: #fff;
     color: #b69974;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
 }
 
-/* Hover */
 .about-switch-buttons .btn:hover {
     background: rgba(182, 153, 116, 0.08);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(182, 153, 116, 0.14);
 }
 
-/* 🔥 Activo = filled */
 .about-switch-buttons .btn.active {
-    background: #b69974;
+    background: linear-gradient(135deg, #c5a57d 0%, #b69974 100%);
     color: #fff;
     border-color: #b69974;
+    box-shadow: 0 10px 24px rgba(182, 153, 116, 0.28);
 }
 
 /* ===== TAB CONTENT ===== */
 .about-tab-content {
-    margin-bottom: 28px;
-    padding: 18px;
-    border-radius: 12px;
-    background: rgba(182, 153, 116, 0.04);
-    border: 1px solid rgba(182, 153, 116, 0.15);
+    margin-bottom: 30px;
+    padding: 24px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid rgba(182, 153, 116, 0.14);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-tab-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #b69974 0%, rgba(182, 153, 116, 0.2) 100%);
 }
 
 .about-tab-pane p {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     color: #444;
-    line-height: 1.7;
+    line-height: 1.8;
+    font-size: 15px;
 }
 
-/* LISTA */
+/* ===== LISTA COMO CARDS ===== */
 .about-tab-pane ul {
     margin: 0;
-    padding-left: 20px;
+    padding: 0;
+    list-style: none;
 }
 
 .about-tab-pane ul li {
-    margin-bottom: 12px;
+    position: relative;
+    margin-bottom: 14px;
+    padding: 16px 18px 16px 56px;
     color: #444;
-    line-height: 1.6;
+    line-height: 1.7;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #fff 0%, #fcfaf7 100%);
+    border: 1px solid rgba(182, 153, 116, 0.14);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+    transition: all 0.28s ease;
 }
 
-/* Bullet elegante */
-.about-tab-pane ul li::marker {
-    color: #b69974;
+.about-tab-pane ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(182, 153, 116, 0.12);
 }
 
-/* ===== WHATSAPP (SIN CARD) ===== */
+.about-tab-pane ul li::before {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(182, 153, 116, 0.12);
+    border: 1px solid rgba(182, 153, 116, 0.28);
+    color: #8f7351;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.about-tab-pane ul li strong {
+    color: #222;
+}
+
+/* ===== WHATSAPP ===== */
 .about-whatsapp-box {
-    margin-top: 8px;
-    padding: 0;
-    background: none;
-    border: none;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.06), rgba(29, 127, 71, 0.03));
+    border: 1px solid rgba(37, 211, 102, 0.14);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
-/* Texto superior SIN dorado */
 .about-whatsapp-box p:first-child {
-    color: #222; /* negro elegante */
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
+    color: #1f1f1f;
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
-/* Botón se queda igual */
 .about-whatsapp-box .whatsapp-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 12px;
     border-radius: 999px;
-    padding: 12px 18px;
+    padding: 13px 20px;
     text-decoration: none;
     background: linear-gradient(135deg, #1d7f47 0%, #25d366 100%);
     color: #fff;
     font-weight: 600;
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 22px rgba(37, 211, 102, 0.22);
 }
 
 .about-whatsapp-box .whatsapp-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 18px rgba(37, 211, 102, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(37, 211, 102, 0.3);
 }
 
-/* Texto inferior */
 .about-whatsapp-box p:last-child {
     color: #555;
     font-size: 14px;
-    line-height: 1.6;
 }
-       </style>
+
+/* ===== IMAGEN ===== */
+.about__imgs {
+    position: relative;
+}
+
+.about__imgs .image-1 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+.about__imgs .image-1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.30) 0%,
+        rgba(0, 0, 0, 0.08) 35%,
+        rgba(0, 0, 0, 0.02) 100%
+    );
+}
+
+.about__imgs .image-1 img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about__imgs:hover .image-1 img {
+    transform: scale(1.05);
+}
+
+/* ===== BADGE ===== */
+.about__imgs .projects {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 22px;
+    padding: 18px 22px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.10);
+}
+
+.about__imgs .projects span {
+    font-size: 42px;
+    font-weight: 800;
+    display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+    .about__area .container {
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-switch-buttons .btn {
+        width: 100%;
+    }
+
+    .about__area .container {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+}
+
+
+
+</style>
     </head>
     <body>
         <!-- Preloader -->
@@ -833,7 +983,7 @@ body{
                     </section>
 
 
-                                  <section class="cta-banner2">
+ <section class="cta-banner2">
     <div class="cta-overlay"></div>
 
     <div class="container">
@@ -873,6 +1023,17 @@ body{
                         </div>
                     </section>
                     <!-- Counter area end -->
+
+
+<section class="cta-banner4">
+    <div class="cta-overlay"></div>
+
+    <div class="container">
+        <div class="cta-content">
+            <h2>
+        No buscamos un cliente, trabajamos para ser tu agencia de confianza y ayudarte a ti y a tu familia a que usen correctamente sus ahorros y planifiquen su pensión.        </div>
+    </div>
+</section>
 
                     <section class="testimonial-area-5">
            <section class="testimonial-area-5">
@@ -1239,6 +1400,18 @@ body{
 </div>
 
             </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="cta-banner3">
+    <div class="cta-overlay"></div>
+
+    <div class="container">
+        <div class="cta-content">
+            <h2>
+            Los ahorros en tu afore son indispensables para cuando dejes de trabajar. Asesórate, infórmate y has los trámites con una agencia seria y con experiencia.            </h2>
         </div>
     </div>
 </section>
