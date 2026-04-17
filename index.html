@@ -1,709 +1,887 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="HTML5 Template">
-        <!-- Site Title -->
-        <title>Kapital Consulting Group</title>
-        <!-- Site Favicon -->
-        <link rel="shortcut icon" href="assets/imgs/logo/FavK.png" type="image/x-icon">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <!-- All CSS Files -->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/aos.css">
-        <link rel="stylesheet" href="assets/css/progressbar.css">
-        <link rel="stylesheet" href="assets/css/master.css">
-        <link rel="stylesheet" href="style.css">
-          <link rel="stylesheet" href="assets/css/stylesMain.css">
 
-       <style>
-        
-   :root{
-  --nav-h: 110px; /* ajusta si necesitas */
-}
-
-/* Fuerza que el header no sea absolute */
-.header__area,
-.header__area.pos-abs{
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: var(--nav-h);
-  z-index: 99999;
-
-  background: #0c1014; /* color sólido */
-  backdrop-filter: none !important;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-/* Alineación interna */
-.header__inner{
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-/* Texto del menú en blanco */
-.main-menu > ul > li > a{
-  color: #fff !important;
-}
-
-.main-menu > ul > li > a:hover{
-  color: #c59d5f !important; /* color acento */
-}
-
-/* Empuja el contenido debajo del header */
-body{
-  padding-top: var(--nav-h);
-}
-
-/* Responsive */
-@media (max-width: 991px){
-  :root{ --nav-h: 90px; }
-}
-
-@media (max-width: 575px){
-  :root{ --nav-h: 78px; }
-}
-
-.breadcrumb__area{
-  display: block;
-  min-height: 600px; /* antes 420px */
-  padding: 160px 0;  /* antes 110px */
-  padding-top: 600px;
-
-  background-color: #0c1014;
-  background-image: url("https://img.freepik.com/foto-gratis/grupo-personas-que-trabajan-plantilla-sitio-web_53876-25068.jpg?t=st=1775171774~exp=1775175374~hmac=5c79d22fa25531520f30e4496aee8fb552658343a1122d187862da9372b6bc30&w=360 360w, https://img.freepik.com/foto-gratis/grupo-personas-que-trabajan-plantilla-sitio-web_53876-25068.jpg?t=st=1775171774~exp=1775175374~hmac=5c79d22fa25531520f30e4496aee8fb552658343a1122d187862da9372b6bc30&w=740 740w, https://img.freepik.com/foto-gratis/grupo-personas-que-trabajan-plantilla-sitio-web_53876-25068.jpg?t=st=1775171774~exp=1775175374~hmac=5c79d22fa25531520f30e4496aee8fb552658343a1122d187862da9372b6bc30&w=1060 1060w, https://img.freepik.com/foto-gratis/grupo-personas-que-trabajan-plantilla-sitio-web_53876-25068.jpg?t=st=1775171774~exp=1775175374~hmac=5c79d22fa25531520f30e4496aee8fb552658343a1122d187862da9372b6bc30&w=1480 1480w, https://img.freepik.com/foto-gratis/grupo-personas-que-trabajan-plantilla-sitio-web_53876-25068.jpg?t=st=1775171774~exp=1775175374~hmac=5c79d22fa25531520f30e4496aee8fb552658343a1122d187862da9372b6bc30&w=2000 2000w") !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  position: relative;
-  overflow: hidden;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Template">
+    <!-- Site Title -->
+    <title>Kapital Consulting Group</title>
+    <!-- Site Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/logo/FavK.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- All CSS Files -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/progressbar.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/stylesMain.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
 
 
-/* ====== OFFCANVAS debajo del header (no tapa el burger) ====== */
-:root{
-  --nav-h: 110px;
-}
-@media (max-width: 991px){ :root{ --nav-h: 90px; } }
-@media (max-width: 575px){ :root{ --nav-h: 78px; } }
-
-/* Header arriba sí o sí */
-.header__area,
-.header__area.pos-abs{
-  position: fixed !important;
-  top: 0; left: 0; right: 0;
-  z-index: 1000000 !important;
-}
-
-/* OFFCANVAS: arranca debajo del header */
-.offcanvas__area{
-  position: fixed !important;
-  top: var(--nav-h) !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-
-  height: calc(100vh - var(--nav-h)) !important;
-  z-index: 999000 !important; /* debajo del header */
-}
-
-/* Por si el template usa inner con height propia */
-.offcanvas__inner{
-  height: 100% !important;
-  overflow-y: auto !important;
-}
-
-/* El overlay (si existe) NO debe cubrir el header */
-.offcanvas__overlay,
-.body-overlay,
-.offcanvas-overlay{
-  position: fixed !important;
-  top: var(--nav-h) !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  z-index: 998500 !important;
-}
-
-/* Evita que el header recorte el burger */
-.header__inner,
-.header__others,
-.header__offcanvas{
-  overflow: visible !important;
-}
-
-.breadcrumb__area{
-  width: 100%;
-  height: 70vh;          /* 🔥 menos alto */
-  min-height: 420px;     /* mantiene tamaño mínimo elegante */
-
-  background-image: url("assets/imgs/hero/bannerIndexK.jpg") !important;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;  /* mantenemos cover */
-
-  position: relative;
-  overflow: hidden;
-}
-
-.testimonial-meta{
-    color: white;
-}
+    <style>
+        :root {
+            --nav-h: 110px;
+            /* ajusta si necesitas */
+        }
 
 
-       </style>
-       
-       <style>
+
+        .breadcrumb__area {
+            display: block;
+            min-height: 600px;
+            /* antes 420px */
+            padding: 160px 0;
+            /* antes 110px */
+            padding-top: 600px;
+
+            background-color: #0c1014;
+            background-image: url("https://img.freepik.com/foto-gratis/jovenes-empresarios-oficina-trabajando-tableta_23-2149206515.jpg") !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        /* ====== OFFCANVAS debajo del header (no tapa el burger) ====== */
+        :root {
+            --nav-h: 110px;
+        }
+
+        @media (max-width: 991px) {
+            :root {
+                --nav-h: 90px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            :root {
+                --nav-h: 78px;
+            }
+        }
+
+        /* Header arriba sí o sí */
+        .header__area,
+        .header__area.pos-abs {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000000 !important;
+        }
+
+        /* OFFCANVAS: arranca debajo del header */
+        .offcanvas__area {
+            position: fixed !important;
+            top: var(--nav-h) !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+
+            height: calc(100vh - var(--nav-h)) !important;
+            z-index: 999000 !important;
+            /* debajo del header */
+        }
+
+        /* Por si el template usa inner con height propia */
+        .offcanvas__inner {
+            height: 100% !important;
+            overflow-y: auto !important;
+        }
+
+        /* El overlay (si existe) NO debe cubrir el header */
+        .offcanvas__overlay,
+        .body-overlay,
+        .offcanvas-overlay {
+            position: fixed !important;
+            top: var(--nav-h) !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            z-index: 998500 !important;
+        }
+
+        /* Evita que el header recorte el burger */
+        .header__inner,
+        .header__others,
+        .header__offcanvas {
+            overflow: visible !important;
+        }
+
+        .breadcrumb__area {
+            width: 100%;
+            height: 70vh;
+            /* 🔥 menos alto */
+            min-height: 420px;
+            /* mantiene tamaño mínimo elegante */
+
+            background-image: url("assets/imgs/hero/banNew.jpg") !important;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* mantenemos cover */
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-meta {
+            color: white;
+        }
+    </style>
+
+    <style>
         .testimonials-section {
-    padding: 90px 0;
-    background: #ffffff;
-}
+            padding: 90px 0;
+            background: #ffffff;
+        }
 
-.testimonials-section .section-title {
-    color: #0d2b4d;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 0;
-}
+        .testimonials-section .section-title {
+            color: #0d2b4d;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
 
-.testimonial-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: #fff;
-    border: 1px solid #dfe5ec;
-    border-radius: 4px;
-    padding: 28px 24px 24px;
-    box-shadow: 0 8px 24px rgba(13, 43, 77, 0.05);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+        .testimonial-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #fff;
+            border: 1px solid #dfe5ec;
+            border-radius: 4px;
+            padding: 28px 24px 24px;
+            box-shadow: 0 8px 24px rgba(13, 43, 77, 0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
 
-.testimonial-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 30px rgba(13, 43, 77, 0.1);
-}
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 30px rgba(13, 43, 77, 0.1);
+        }
 
-.testimonial-stars {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 18px;
-    font-size: 20px;
-    line-height: 1;
-}
+        .testimonial-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 18px;
+            font-size: 20px;
+            line-height: 1;
+        }
 
-.testimonial-stars .star.filled {
-    color: #f5c542;
-}
+        .testimonial-stars .star.filled {
+            color: #f5c542;
+        }
 
-.testimonial-stars .star.empty {
-    color: #d7dde5;
-}
+        .testimonial-stars .star.empty {
+            color: #d7dde5;
+        }
 
-.testimonial-text {
-    color: #25364a;
-    font-size: 15px;
-    line-height: 1.75;
-    margin-bottom: 18px;
-    min-height: 132px;
-}
+        .testimonial-text {
+            color: #25364a;
+            font-size: 15px;
+            line-height: 1.75;
+            margin-bottom: 18px;
+            min-height: 132px;
+        }
 
-.testimonial-link {
-    display: inline-block;
-    margin-bottom: 22px;
-    color: #2b8c97;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
+        .testimonial-link {
+            display: inline-block;
+            margin-bottom: 22px;
+            color: #2b8c97;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
 
-.testimonial-link:hover {
-    color: #1f6b74;
-}
+        .testimonial-link:hover {
+            color: #1f6b74;
+        }
 
-.testimonial-author h6 {
-    margin: 0;
-    color: #6c7a89;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1.4;
-}
+        .testimonial-author h6 {
+            margin: 0;
+            color: #6c7a89;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
 
-@media (max-width: 991.98px) {
-    .testimonials-section {
-        padding: 70px 0;
-    }
+        @media (max-width: 991.98px) {
+            .testimonials-section {
+                padding: 70px 0;
+            }
 
-    .testimonial-text {
-        min-height: auto;
-    }
-}
+            .testimonial-text {
+                min-height: auto;
+            }
+        }
 
-@media (max-width: 575.98px) {
-    .testimonials-section {
-        padding: 55px 0;
-    }
+        @media (max-width: 575.98px) {
+            .testimonials-section {
+                padding: 55px 0;
+            }
 
-    .testimonials-section .section-title {
-        font-size: 28px;
-    }
+            .testimonials-section .section-title {
+                font-size: 28px;
+            }
 
-    .testimonial-card {
-        padding: 24px 20px 20px;
-    }
+            .testimonial-card {
+                padding: 24px 20px 20px;
+            }
 
-    .testimonial-stars {
-        font-size: 18px;
-        margin-bottom: 14px;
-    }
+            .testimonial-stars {
+                font-size: 18px;
+                margin-bottom: 14px;
+            }
 
-    .testimonial-text {
-        font-size: 14px;
-        line-height: 1.7;
-        margin-bottom: 14px;
-    }
+            .testimonial-text {
+                font-size: 14px;
+                line-height: 1.7;
+                margin-bottom: 14px;
+            }
 
-    .testimonial-link {
-        font-size: 13px;
-        margin-bottom: 18px;
-    }
+            .testimonial-link {
+                font-size: 13px;
+                margin-bottom: 18px;
+            }
 
-    .testimonial-author h6 {
-        font-size: 14px;
-    }
-}
-       </style>
-
-
-       <style>/* ===== SECCIÓN GENERAL (WRAPPER TIPO CARD) ===== */
-.about__area { 
-background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 20px; 
-}
-
-.about__area .container {
-    background: linear-gradient(135deg, #f5efe6 0%, #efe6d8 100%);
-    border-radius: 30px;
-    padding: 50px 40px;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(182, 153, 116, 0.25);
-    position: relative;
-    overflow: hidden;
-}
-
-.about__area .container::before {
-    content: "";
-    position: absolute;
-    top: -100px;
-    right: -100px;
-    width: 260px;
-    height: 260px;
-    background: radial-gradient(circle, rgba(182,153,116,0.18) 0%, transparent 70%);
-    z-index: 0;
-}
+            .testimonial-author h6 {
+                font-size: 14px;
+            }
+        }
+    </style>
 
 
+    <style>
+        /* ===== SECCIÓN GENERAL (WRAPPER TIPO CARD) ===== */
+        .about__area {
+            background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);
+            padding: 60px 20px;
+        }
 
-.about__area .row {
-    position: relative;
-    z-index: 2;
-}
+        .about__area .container {
+            background: linear-gradient(135deg, #f5efe6 0%, #efe6d8 100%);
+            border-radius: 30px;
+            padding: 50px 40px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(182, 153, 116, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
 
-.about__area .shape {
-    opacity: 0.08;
-    right: 10px;
-    bottom: 10px;
-}
-
-/* ===== INTRO ===== */
-.about-switch-intro {
-    margin: 22px 0 20px;
-    padding: 18px 20px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, rgba(182, 153, 116, 0.12), rgba(182, 153, 116, 0.05));
-    border: 1px solid rgba(182, 153, 116, 0.22);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-}
-
-.about-switch-intro p {
-    margin-bottom: 0;
-    color: #444;
-    line-height: 1.75;
-    font-size: 15px;
-}
-
-/* ===== BUTTONS ===== */
-.about-switch-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 24px;
-}
-
-.about-switch-buttons .btn {
-    border-radius: 999px;
-    padding: 11px 20px;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    border: 1px solid #b69974;
-    cursor: pointer;
-    background: #fff;
-    color: #b69974;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-}
-
-.about-switch-buttons .btn:hover {
-    background: rgba(182, 153, 116, 0.08);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(182, 153, 116, 0.14);
-}
-
-.about-switch-buttons .btn.active {
-    background: linear-gradient(135deg, #c5a57d 0%, #b69974 100%);
-    color: #fff;
-    border-color: #b69974;
-    box-shadow: 0 10px 24px rgba(182, 153, 116, 0.28);
-}
-
-/* ===== TAB CONTENT ===== */
-.about-tab-content {
-    margin-bottom: 30px;
-    padding: 24px;
-    border-radius: 20px;
-    background: #fff;
-    border: 1px solid rgba(182, 153, 116, 0.14);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
-}
-
-.about-tab-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #b69974 0%, rgba(182, 153, 116, 0.2) 100%);
-}
-
-.about-tab-pane p {
-    margin-bottom: 16px;
-    color: #444;
-    line-height: 1.8;
-    font-size: 15px;
-}
-
-/* ===== LISTA COMO CARDS ===== */
-.about-tab-pane ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.about-tab-pane ul li {
-    position: relative;
-    margin-bottom: 14px;
-    padding: 16px 18px 16px 56px;
-    color: #444;
-    line-height: 1.7;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #fff 0%, #fcfaf7 100%);
-    border: 1px solid rgba(182, 153, 116, 0.14);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
-    transition: all 0.28s ease;
-}
-
-.about-tab-pane ul li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(182, 153, 116, 0.12);
-}
-
-.about-tab-pane ul li::before {
-    content: "✓";
-    position: absolute;
-    top: 50%;
-    left: 18px;
-    transform: translateY(-50%);
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: rgba(182, 153, 116, 0.12);
-    border: 1px solid rgba(182, 153, 116, 0.28);
-    color: #8f7351;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.about-tab-pane ul li strong {
-    color: #222;
-}
-
-/* ===== WHATSAPP ===== */
-.about-whatsapp-box {
-    margin-top: 10px;
-    padding: 20px;
-    border-radius: 18px;
-    background: linear-gradient(135deg, rgba(37, 211, 102, 0.06), rgba(29, 127, 71, 0.03));
-    border: 1px solid rgba(37, 211, 102, 0.14);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-}
-
-.about-whatsapp-box p:first-child {
-    color: #1f1f1f;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.about-whatsapp-box .whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 12px;
-    border-radius: 999px;
-    padding: 13px 20px;
-    text-decoration: none;
-    background: linear-gradient(135deg, #1d7f47 0%, #25d366 100%);
-    color: #fff;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 22px rgba(37, 211, 102, 0.22);
-}
-
-.about-whatsapp-box .whatsapp-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 28px rgba(37, 211, 102, 0.3);
-}
-
-.about-whatsapp-box p:last-child {
-    color: #555;
-    font-size: 14px;
-}
-
-/* ===== IMAGEN ===== */
-.about__imgs {
-    position: relative;
-}
-
-.about__imgs .image-1 {
-    position: relative;
-    overflow: hidden;
-    border-radius: 28px;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
-}
-
-.about__imgs .image-1::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.30) 0%,
-        rgba(0, 0, 0, 0.08) 35%,
-        rgba(0, 0, 0, 0.02) 100%
-    );
-}
-
-.about__imgs .image-1 img {
-    width: 100%;
-    display: block;
-    transition: transform 0.5s ease;
-}
-
-.about__imgs:hover .image-1 img {
-    transform: scale(1.05);
-}
-
-/* ===== BADGE ===== */
-.about__imgs .projects {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.92);
-    border-radius: 22px;
-    padding: 18px 22px;
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.10);
-}
-
-.about__imgs .projects span {
-    font-size: 42px;
-    font-weight: 800;
-    display: block;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 991px) {
-    .about__area .container {
-        padding: 40px 25px;
-    }
-}
-
-@media (max-width: 767px) {
-    .about-switch-buttons .btn {
-        width: 100%;
-    }
-
-    .about__area .container {
-        padding: 30px 20px;
-        border-radius: 20px;
-    }
-}
+        .about__area .container::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 260px;
+            height: 260px;
+            background: radial-gradient(circle, rgba(182, 153, 116, 0.18) 0%, transparent 70%);
+            z-index: 0;
+        }
 
 
 
-</style>
-    </head>
-    <body>
-        <!-- Preloader -->
-        <div id="preloader">
-            <div id="loader"></div>
-        </div>
-        <!-- Scroll to top -->
-        <button id="scroll_top" class="scroll-top">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
-        <!-- Offcanvas area start -->
-        <div class="offcanvas__area">
-  <div class="offcanvas__inner">
-    <div class="offcanvas__top">
-      <img src="assets/imgs/logo/Kapital8.png" alt="Logo">
-      <button id="offcanvas_close"><i class="fa-solid fa-xmark"></i></button>
+        .about__area .row {
+            position: relative;
+            z-index: 2;
+        }
+
+        .about__area .shape {
+            opacity: 0.08;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        /* ===== INTRO ===== */
+        .about-switch-intro {
+            margin: 22px 0 20px;
+            padding: 18px 20px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(182, 153, 116, 0.12), rgba(182, 153, 116, 0.05));
+            border: 1px solid rgba(182, 153, 116, 0.22);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        }
+
+        .about-switch-intro p {
+            margin-bottom: 0;
+            color: #444;
+            line-height: 1.75;
+            font-size: 15px;
+        }
+
+        /* ===== BUTTONS ===== */
+        .about-switch-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .about-switch-buttons .btn {
+            border-radius: 999px;
+            padding: 11px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: 1px solid #b69974;
+            cursor: pointer;
+            background: #fff;
+            color: #b69974;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+        }
+
+        .about-switch-buttons .btn:hover {
+            background: rgba(182, 153, 116, 0.08);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(182, 153, 116, 0.14);
+        }
+
+        .about-switch-buttons .btn.active {
+            background: linear-gradient(135deg, #c5a57d 0%, #b69974 100%);
+            color: #fff;
+            border-color: #b69974;
+            box-shadow: 0 10px 24px rgba(182, 153, 116, 0.28);
+        }
+
+        /* ===== TAB CONTENT ===== */
+        .about-tab-content {
+            margin-bottom: 30px;
+            padding: 24px;
+            border-radius: 20px;
+            background: #fff;
+            border: 1px solid rgba(182, 153, 116, 0.14);
+            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-tab-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #b69974 0%, rgba(182, 153, 116, 0.2) 100%);
+        }
+
+        .about-tab-pane p {
+            margin-bottom: 16px;
+            color: #444;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        /* ===== LISTA COMO CARDS ===== */
+        .about-tab-pane ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .about-tab-pane ul li {
+            position: relative;
+            margin-bottom: 14px;
+            padding: 16px 18px 16px 56px;
+            color: #444;
+            line-height: 1.7;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #fff 0%, #fcfaf7 100%);
+            border: 1px solid rgba(182, 153, 116, 0.14);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+            transition: all 0.28s ease;
+        }
+
+        .about-tab-pane ul li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(182, 153, 116, 0.12);
+        }
+
+        .about-tab-pane ul li::before {
+            content: "✓";
+            position: absolute;
+            top: 50%;
+            left: 18px;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: rgba(182, 153, 116, 0.12);
+            border: 1px solid rgba(182, 153, 116, 0.28);
+            color: #8f7351;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .about-tab-pane ul li strong {
+            color: #222;
+        }
+
+        /* ===== WHATSAPP ===== */
+        .about-whatsapp-box {
+            margin-top: 10px;
+            padding: 20px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.06), rgba(29, 127, 71, 0.03));
+            border: 1px solid rgba(37, 211, 102, 0.14);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        }
+
+        .about-whatsapp-box p:first-child {
+            color: #1f1f1f;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .about-whatsapp-box .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            border-radius: 999px;
+            padding: 13px 20px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #1d7f47 0%, #25d366 100%);
+            color: #fff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 22px rgba(37, 211, 102, 0.22);
+        }
+
+        .about-whatsapp-box .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px rgba(37, 211, 102, 0.3);
+        }
+
+        .about-whatsapp-box p:last-child {
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* ===== IMAGEN ===== */
+        .about__imgs {
+            position: relative;
+        }
+
+        .about__imgs .image-1 {
+            position: relative;
+            overflow: hidden;
+            border-radius: 28px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+        }
+
+        .about__imgs .image-1::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.30) 0%,
+                    rgba(0, 0, 0, 0.08) 35%,
+                    rgba(0, 0, 0, 0.02) 100%);
+        }
+
+        .about__imgs .image-1 img {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .about__imgs:hover .image-1 img {
+            transform: scale(1.05);
+        }
+
+        /* ===== BADGE ===== */
+        .about__imgs .projects {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 22px;
+            padding: 18px 22px;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.10);
+        }
+
+        .about__imgs .projects span {
+            font-size: 42px;
+            font-weight: 800;
+            display: block;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 991px) {
+            .about__area .container {
+                padding: 40px 25px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .about-switch-buttons .btn {
+                width: 100%;
+            }
+
+            .about__area .container {
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+        }
+
+
+        /* ===== CONTACTO ESTILO ABOUT ===== */
+        .contact-about-style {
+            background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);
+            padding: 60px 20px;
+        }
+
+        .contact-about-style .container {
+            max-width: 1320px;
+        }
+
+        .contact-about-style .contact-card {
+            background: linear-gradient(135deg, #f5efe6 0%, #efe6d8 100%);
+            border-radius: 30px;
+            padding: 50px 40px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(182, 153, 116, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-about-style .contact-card::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 260px;
+            height: 260px;
+            background: radial-gradient(circle, rgba(182, 153, 116, 0.18) 0%, transparent 70%);
+            z-index: 0;
+        }
+
+        .contact-about-style .row {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ===== IMAGEN ===== */
+        .contact-about-style .contact-visual {
+            position: relative;
+        }
+
+        .contact-about-style .contact-image-wrap {
+            position: relative;
+            overflow: hidden;
+            border-radius: 28px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+        }
+
+        .contact-about-style .contact-image-wrap::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.22) 0%,
+                    rgba(0, 0, 0, 0.06) 35%,
+                    rgba(0, 0, 0, 0.02) 100%);
+        }
+
+        .contact-about-style .contact-image-wrap img {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .contact-about-style .contact-image-wrap:hover img {
+            transform: scale(1.04);
+        }
+
+        /* ===== TEXTO ===== */
+        .contact-about-style .contact-title {
+            font-size: 42px;
+            line-height: 1.15;
+            margin-bottom: 14px;
+            color: #222;
+            font-weight: 700;
+        }
+
+        .contact-about-style .contact-subtitle {
+            color: #444;
+            line-height: 1.8;
+            font-size: 15px;
+            margin-bottom: 28px;
+            max-width: 90%;
+        }
+
+        /* ===== FORM ===== */
+        .contact-about-style .contact__form form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .contact-about-style .contact__form input,
+        .contact-about-style .contact__form textarea {
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid rgba(182, 153, 116, 0.30);
+            background: rgba(255, 255, 255, 0.55);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.03);
+            color: #222;
+            font-size: 15px;
+            padding: 18px 20px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-about-style .contact__form textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+        .contact-about-style .contact__form input::placeholder,
+        .contact-about-style .contact__form textarea::placeholder {
+            color: #555;
+        }
+
+        .contact-about-style .contact__form input:focus,
+        .contact-about-style .contact__form textarea:focus {
+            border-color: #b69974;
+            background: #fff;
+            box-shadow: 0 10px 24px rgba(182, 153, 116, 0.14);
+        }
+
+        /* ===== BOTÓN ===== */
+        .contact-about-style .contact__form .submit {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 999px;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #c5a57d 0%, #b69974 100%);
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            box-shadow: 0 10px 24px rgba(182, 153, 116, 0.28);
+            transition: all 0.3s ease;
+        }
+
+        .contact-about-style .contact__form .submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px rgba(182, 153, 116, 0.32);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 991px) {
+            .contact-about-style .contact-card {
+                padding: 40px 25px;
+            }
+
+            .contact-about-style .contact-title {
+                font-size: 34px;
+            }
+
+            .contact-about-style .contact-subtitle {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .contact-about-style {
+                padding: 40px 12px;
+            }
+
+            .contact-about-style .contact-card {
+                padding: 28px 18px;
+                border-radius: 20px;
+            }
+
+            .contact-about-style .contact-image-wrap {
+                border-radius: 20px;
+            }
+
+            .contact-about-style .contact-title {
+                font-size: 28px;
+            }
+
+            .contact-about-style .contact-subtitle {
+                font-size: 14px;
+                line-height: 1.7;
+                margin-bottom: 22px;
+            }
+
+            .contact-about-style .contact__form input,
+            .contact-about-style .contact__form textarea {
+                border-radius: 16px;
+                padding: 16px 16px;
+                font-size: 14px;
+            }
+
+            .contact-about-style .contact__form .submit {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/nav.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-
-    <div class="offcanvas__search">
-      <form action="#">
-        <input type="text" placeholder="Buscar..." name="s">
-      </form>
-    </div>
-
-    <div class="offcanvas__menu">
-      <div class="offcanvas-menu">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-          <li><a href="privacy.html">Aviso de privacidad</a></li>
-          <li><a href="tramites.html">Trámites</a></li>
-          <li><a href="faq.html">Preguntas frecuentes</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="offcanvas__map">
-      <iframe
-        src="https://www.google.com/maps?q=Torre+Albertina+Puebla&output=embed"
-        loading="lazy"></iframe>
-    </div>
-
-    <div class="offcanvas__btm">
-      <div class="footer__address-3">
-        <ul>
-          <li>
-            <span><i class="fa-solid fa-location-dot"></i></span>
-            <p class="text-white">
-              Torre Albertina<br>
-              Calle Tehuacan Sur 60, La Paz<br>
-              Heroica Puebla de Zaragoza, Puebla
-            </p>
-          </li>
-
-          <li>
-            <span><i class="fa-solid fa-phone"></i></span>
-            <div>
-              <a href="tel:+5217444574309">+52 1 744 457 4309</a>
-              <a href="tel:+522215851569">(221) 585 1569</a>
+    <!-- Scroll to top -->
+    <button id="scroll_top" class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- Offcanvas area start -->
+    <div class="offcanvas__area">
+        <div class="offcanvas__inner">
+            <div class="offcanvas__top">
+                <img src="assets/imgs/logo/Kapital8.png" alt="Logo">
+                <button id="offcanvas_close"><i class="fa-solid fa-xmark"></i></button>
             </div>
-          </li>
 
-          <li>
-            <span><i class="fa-solid fa-envelope"></i></span>
-            <div>
-              <a href="mailto:clientes@kapitalconsultinggroup.com">clientes@kapitalconsultinggroup.com</a>
+            <div class="offcanvas__search">
+                <form action="#">
+                    <input type="text" placeholder="Buscar..." name="s">
+                </form>
             </div>
-          </li>
-        </ul>
-      </div>
 
-      <div class="footer__social-3">
-        <ul>
-          <!-- <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <div class="offcanvas__menu">
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="privacy.html">Aviso de privacidad</a></li>
+                        <li><a href="tramites.html">Trámites</a></li>
+                        <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="offcanvas__map">
+                <iframe src="https://www.google.com/maps?q=Torre+Albertina+Puebla&output=embed" loading="lazy"></iframe>
+            </div>
+
+            <div class="offcanvas__btm">
+                <div class="footer__address-3">
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p class="text-white">
+                                Torre Albertina<br>
+                                Calle Tehuacan Sur 60, La Paz<br>
+                                Heroica Puebla de Zaragoza, Puebla
+                            </p>
+                        </li>
+
+                        <li>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <div>
+                                <a href="tel:+5217444574309">+52 1 744 457 4309</a>
+                                <a href="tel:+522215851569">(221) 585 1569</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <div>
+                                <a
+                                    href="mailto:clientes@kapitalconsultinggroup.com">clientes@kapitalconsultinggroup.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__social-3">
+                    <ul>
+                        <!-- <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
           <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
           <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li> -->
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-        <!-- Offcanvas area end -->
-
-        
-
-        <div id="smooth-wrapper">
-            <div id="smooth-content">
-                <!-- Header area start -->
-           <header class="header__area pos-abs plr-100">
-    <div class="header__inner">
-      <div class="header__logo">
-        <a href="index.html"><img src="assets/imgs/logo/Kapital8.png" alt="Site Logo" style="width: 250px;"></a>
-      </div>
-      <div class="header__menu">
-        <nav class="main-menu">
-          <ul>
-  <li><a href="index.html">Inicio</a></li>
-
-  <li><a href="contact.html">Contacto</a></li>
-
-  <li><a href="privacy.html">Aviso de privacidad</a></li>
-
-  <li><a href="tramites.html">Trámites</a></li>
-
-  <li><a href="faq.html">Preguntas frecuentes</a></li>
-
-  <li><a href="blog.html">Blog</a></li>
-</ul>
-        </nav>
-      </div>
-      <div class="header__others">
-        <div class="header__search">
-          <!-- <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button> -->
-          <button class="search-close"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <div class="header__offcanvas">
-          <button class="menu_icon">
-            <img src="assets/imgs/icon/menu.png" alt="Menu Icon">
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-                <div class="search__form">
-                    <form action="#">
-                        <input type="text" name="s" placeholder="Search...">
-                    </form>
+                    </ul>
                 </div>
-                <!-- Header area end -->
-                <main>
-                    <section class="breadcrumb__area">
-      <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <div class="breadcrumb__inner">
-              <!-- <div class="breadcrumb__left">
+            </div>
+        </div>
+    </div>
+    <!-- Offcanvas area end -->
+
+
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- Header area start -->
+            <header class="header__area pos-abs plr-100">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="assets/imgs/logo/Kapital8.png" alt="Site Logo"
+                                style="width: 250px;"></a>
+                    </div>
+                    <div class="header__menu">
+                        <nav class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+
+                                <li><a href="contact.html">Contacto</a></li>
+
+                                <li><a href="privacy.html">Aviso de privacidad</a></li>
+
+                                <li><a href="tramites.html">Trámites</a></li>
+
+                                <li><a href="faq.html">Preguntas frecuentes</a></li>
+
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__others">
+                        <div class="header__search">
+                            <!-- <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                            <button class="search-close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="header__offcanvas">
+                            <button class="menu_icon">
+                                <img src="assets/imgs/icon/menu.png" alt="Menu Icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="search__form">
+                <form action="#">
+                    <input type="text" name="s" placeholder="Search...">
+                </form>
+            </div>
+            <!-- Header area end -->
+            <main>
+                <section class="breadcrumb__area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-12">
+                                <div class="breadcrumb__inner">
+                                    <!-- <div class="breadcrumb__left">
                 <h1 class="breadcrumb__title">Contact</h1>
               </div>
               <div class="breadcrumb__right">
@@ -713,16 +891,16 @@ background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 2
                 </ul>
               </div>
             </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-                    <!-- Hero area start -->
-       
-                    <!-- Hero area end -->
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <!-- Hero area start -->
 
-                    <!-- Service area start -->
-                    <!-- <section class="service__area pt-150 pb-130">
+                <!-- Hero area end -->
+
+                <!-- Service area start -->
+                <!-- <section class="service__area pt-150 pb-130">
                         <div class="container">
                             <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
                                 <div class="row pb-120">
@@ -791,634 +969,693 @@ background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 2
                             </div>
                         </div>
                     </section> -->
-                    <!-- Service area end -->
+                <!-- Service area end -->
 
 
-                    <section class="cta-banner">
-    <div class="cta-overlay"></div>
+                <section class="cta-banner">
+                    <div class="cta-overlay"></div>
 
-    <div class="container">
-        <div class="cta-content">
-            <h2>
-                Aseguramos tu futuro con asesores expertos en pensiones y trámites de afore
-            </h2>
-        </div>
-    </div>
-</section>
-
-                    <!-- About area start -->
-                    <section class="about__area pb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
-                <div class="about__imgs" data-aos="fade-up">
-                    <div class="image-1">
-                        <img class="border-radius-25" src="assets/imgs/hero/indexTramites.jpg" alt="Image">
-                    </div>
-
-                    <div class="projects">
-                        <img src="assets/imgs/icon/medal.png" alt="Medal Icon">
-                        <p>
-                            <span class="counter_fast">2100+</span>Trámites completados
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
-                <div class="about__content" data-aos="fade-up" data-aos-delay="500">
-                    <h2 class="sec-subtitle">
-                        NUESTROS ANTECEDENTES
-                        <span>About Us</span>
-                    </h2>
-
-                    <div class="p-animation">
-                        <p>
-                            Somos un equipo especializado en asesorar a trabajadores mexicanos en temas de
-                            afores, pensiones y trámites institucionales. Nuestro objetivo es hacer más claros
-                            y accesibles procesos que suelen parecer complicados, para que cada persona conozca
-                            sus derechos y pueda tomar mejores decisiones.
-                        </p>
-
-                        <p>
-                            A lo largo de nuestra experiencia, hemos acompañado a derechohabientes de distintas
-                            partes de la República Mexicana, brindando orientación confiable, cercana y profesional
-                            en cada trámite.
-                        </p>
-                    </div>
-
-                    <div class="" data-aos="fade-up" data-aos-delay="200">
-                        <p>
-                            Conoce más sobre quiénes somos y por qué tantas personas confían en nosotros para
-                            acompañarlas en procesos importantes para su patrimonio y su futuro.
-                        </p>
-                    </div>
-
-                    <div class="about-switch-buttons" data-aos="fade-up" data-aos-delay="250">
-                        <button type="button" class="btn primary-btn active" id="btn-about-company">
-                            Acerca de la empresa
-                        </button>
-                        <button type="button" class="btn primary-btn-outline" id="btn-why-choose-us">
-                            ¿Por qué elegirnos?
-                        </button>
-                    </div>
-
-                    <div class="about-tab-content" data-aos="fade-up" data-aos-delay="300">
-                        <div id="content-about-company" class="about-tab-pane active">
-                            <p>
-                                Nuestra empresa nace con la convicción de que la información debe compartirse
-                                de forma clara y útil. Por eso, trabajamos para ayudar a los trabajadores
-                                mexicanos a comprender y aprovechar mejor las opciones disponibles en materia
-                                de afores, pensiones, IMSS, INFONAVIT, ISSSTE y FOVISSSTE.
-                            </p>
-
-                            <p>
-                                Contamos con un equipo de más de 50 colaboradores comprometidos con brindar
-                                atención profesional, humana y transparente durante cada etapa del proceso.
-                            </p>
-                        </div>
-
-                        <div id="content-why-choose-us" class="about-tab-pane" style="display: none;">
-                            <ul>
-                                <li><strong>Asesoría especializada:</strong> Te acompañamos con atención experta en cada paso.</li>
-                                <li><strong>Más opciones para ti:</strong> Te ayudamos a identificar trámites y beneficios que muchas personas desconocen.</li>
-                                <li><strong>Información clara:</strong> Simplificamos procesos complejos para que tomes decisiones con mayor seguridad.</li>
-                                <li><strong>Transparencia y confianza:</strong> Mantenemos claridad en requisitos, avances y alcances del servicio.</li>
-                            </ul>
+                    <div class="container">
+                        <div class="cta-content">
+                            <h2>
+                                Aseguramos tu futuro con asesores expertos en pensiones y trámites de afore
+                            </h2>
                         </div>
                     </div>
+                </section>
 
-                    <div class="about-whatsapp-box" data-aos="fade-up" data-aos-delay="350">
-                        <p><strong>Chat de Atención a clientes:</strong></p>
+                <!-- About area start -->
+                <section class="about__area pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
+                                <div class="about__imgs" data-aos="fade-up">
+                                    <div class="image-1">
+                                        <img class="border-radius-25" src="assets/imgs/hero/nTramites.jpg" alt="Image">
+                                    </div>
 
-                        <a class="whatsapp-btn" href="https://wa.me/2215851569" target="_blank">
-                            Escríbenos por WhatsApp
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                        <p>
-                            Agenda una asesoría gratuita o resuelve todas tus dudas antes de contratar.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <img src="assets/imgs/shape/6.png" alt="Zigzag Shape" class="shape">
-    </div>
-                    </section>  
-                    <!-- About area end -->
-
-                     <section class="who__area" style="background-image: url('assets/imgs/hero/00.png');">
-                        <div class="who__area_inner pt-5 pb-5" style="background-image: url('https://img.freepik.com/vector-gratis/concepto-isometrico-cultura-corporativa-gente-negocios-ensamblando-ilustracion-vector-rompecabezas_1284-75504.jpg?uid=R226113459&ga=GA1.1.2046338130.1761276142&semt=ais_hybrid&w=740&q=80');">
-                            <div class="container mt-xl-5 mb-xl-5">
-                                <div class="row">
-                                    <div class="col-xxl-5 col-xl-5 col-lg-6">
-    <div class="who__left">
-        <div class="sec-title-wrap pb-3" data-aos="fade-up">
-            <h2 class="sec-subtitle">NUESTRA CULTURA</h2>
-            <h3 class="sec-subtitle heading-animation" style="color: #0c1014; text-transform:none;">
-                Filosofía y compromiso que impulsan el bienestar financiero de los trabajadores
-                <br>
-            </h3>
-        </div>
-
-        <div class="who__features">
-
-
-            <div class="who__feature" data-aos="fade-up" data-aos-delay="600">
-                <div class="number">
-                    <span class="color-base">01</span>
-                </div>
-                <div class="who__content">
-                    <h4 class="title">Misión</h4>
-                    <p>
-                        Brindar asesoría profesional a los trabajadores mexicanos, garantizando que cada cliente obtenga el retiro que se merece y aproveche todos los beneficios de su cuenta de afore.
-                    </p>
-                </div>
-            </div>
-
-            <div class="who__feature" data-aos="fade-up" data-aos-delay="300">
-                <div class="number">
-                    <span class="color-base">02</span>
-                </div>
-                <div class="who__content">
-                    <h4 class="title">Visión</h4>
-                    <p>
-                        Convertirnos en uno de los referentes principales en educación de seguridad social y pensiones, para que los trabajadores planeen su jubilación a tiempo.
-                    </p>
-                </div>
-            </div>
-
-            
-
-            <div class="who__feature" data-aos="fade-up" data-aos-delay="900">
-                <div class="number">
-                    <span class="color-base">03</span>
-                </div>
-                <div class="who__content">
-                    <h4 class="title">Valores</h4>
-                    <ul>
-                       <li>Responsabilidad</li>
-                        <li>Compromiso</li>
-                        <li>Transparencia</li>
-                        <li>Empatía</li>
-                        <li>Eficacia</li>
-                        <li>Confidencialidad</li>
-                        <li>Innovación</li>
-                        <li>Trabajo en equipo</li>
-                        <li>Resiliencia</li>
-                        <li>Diversidad e inclusión</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
+                                    <div class="projects">
+                                        <img src="assets/imgs/icon/medal.png" alt="Medal Icon">
+                                        <p>
+                                            <span class="counter_fast">2150+</span>Trámites completados
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
 
+                            <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
+                                <div class="about__content" data-aos="fade-up" data-aos-delay="500">
+                                    <h2 class="sec-subtitle">
+                                        NUESTROS ANTECEDENTES
+                                        <span>About Us</span>
+                                    </h2>
 
- <section class="cta-banner2">
-    <div class="cta-overlay"></div>
+                                    <div class="p-animation">
+                                        <p>
+                                            Somos un equipo especializado en asesorar a trabajadores mexicanos en temas
+                                            de
+                                            afores, pensiones y trámites institucionales. Nuestro objetivo es hacer más
+                                            claros
+                                            y accesibles procesos que suelen parecer complicados, para que cada persona
+                                            conozca
+                                            sus derechos y pueda tomar mejores decisiones.
+                                        </p>
 
-    <div class="container">
-        <div class="cta-content">
-            <h2>
-                Tus trámites son 100% seguros, todo se maneja bajo contrato y tienes un asesor a tu lado para resolver todas tus dudas antes, durante y después de contratarnos.
-            </h2>
-        </div>
-    </div>
-</section>
+                                        <p>
+                                            A lo largo de nuestra experiencia, hemos acompañado a derechohabientes de
+                                            distintas
+                                            partes de la República Mexicana, brindando orientación confiable, cercana y
+                                            profesional
+                                            en cada trámite.
+                                        </p>
+                                    </div>
 
+                                    <div class="" data-aos="fade-up" data-aos-delay="200">
+                                        <p>
+                                            Conoce más sobre quiénes somos y por qué tantas personas confían en nosotros
+                                            para
+                                            acompañarlas en procesos importantes para su patrimonio y su futuro.
+                                        </p>
+                                    </div>
 
-                    <!-- Counter area start -->
-                    <section class="counter__area bg-white">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xxl-12">
-                                    <div class="counter__inner">
-                                        <div class="counter__item" data-aos="fade-right">
-                                            <div class="counter__number counter_slow style2">1397+
-                                            </div>
-                                            <h3 class="counter__title color-heading">Clientes satisfechos </h3>
+                                    <div class="about-switch-buttons" data-aos="fade-up" data-aos-delay="250">
+                                        <button type="button" class="btn primary-btn active" id="btn-about-company">
+                                            Acerca de la empresa
+                                        </button>
+                                        <button type="button" class="btn primary-btn-outline" id="btn-why-choose-us">
+                                            ¿Por qué elegirnos?
+                                        </button>
+                                    </div>
+
+                                    <div class="about-tab-content" data-aos="fade-up" data-aos-delay="300">
+                                        <div id="content-about-company" class="about-tab-pane active">
+                                            <p>
+                                                Nuestra empresa nace con la convicción de que la información debe
+                                                compartirse
+                                                de forma clara y útil. Por eso, trabajamos para ayudar a los
+                                                trabajadores
+                                                mexicanos a comprender y aprovechar mejor las opciones disponibles en
+                                                materia
+                                                de afores, pensiones, IMSS, INFONAVIT, ISSSTE y FOVISSSTE.
+                                            </p>
+
+                                            <p>
+                                                Contamos con un equipo de más de 50 colaboradores comprometidos con
+                                                brindar
+                                                atención profesional, humana y transparente durante cada etapa del
+                                                proceso.
+                                            </p>
                                         </div>
-                                        <div class="counter__item" data-aos="fade-right" data-aos-delay="300">
-                                            <div class="counter__number counter_slow style2">6+
-                                            </div>
-                                            <h3 class="counter__title color-heading">Años de experiencia </h3>
+
+                                        <div id="content-why-choose-us" class="about-tab-pane" style="display: none;">
+                                            <ul>
+                                                <li><strong>Asesoría especializada:</strong> Te acompañamos con atención
+                                                    experta en cada paso.</li>
+                                                <li><strong>Más opciones para ti:</strong> Te ayudamos a identificar
+                                                    trámites y beneficios que muchas personas desconocen.</li>
+                                                <li><strong>Información clara:</strong> Simplificamos procesos complejos
+                                                    para que tomes decisiones con mayor seguridad.</li>
+                                                <li><strong>Transparencia y confianza:</strong> Mantenemos claridad en
+                                                    requisitos, avances y alcances del servicio.</li>
+                                            </ul>
                                         </div>
-                                        <div class="counter__item" data-aos="fade-right" data-aos-delay="600">
-                                            <div class="counter__number counter_slow style2">2100+
-                                            </div>  
-                                            <h3 class="counter__title color-heading">trámites realizados </h3>
-                                        </div>
+                                    </div>
+
+                                    <div class="about-whatsapp-box" data-aos="fade-up" data-aos-delay="350">
+                                        <p><strong>Chat de Atención a clientes:</strong></p>
+
+                                        <a class="whatsapp-btn" href="https://wa.me/2215851569" target="_blank">
+                                            Escríbenos por WhatsApp
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+
+                                        <p>
+                                            Agenda una asesoría gratuita o resuelve todas tus dudas antes de contratar.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- Counter area end -->
+
+                        <img src="assets/imgs/shape/6.png" alt="Zigzag Shape" class="shape">
+                    </div>
+                </section>
+                <!-- About area end -->
+
+                <section class="who__area" style="background-image: url('assets/imgs/hero/00.png');">
+                    <div class="who__area_inner pt-5 pb-5"
+                        style="background-image: url('https://img.freepik.com/vector-gratis/concepto-isometrico-cultura-corporativa-gente-negocios-ensamblando-ilustracion-vector-rompecabezas_1284-75504.jpg?uid=R226113459&ga=GA1.1.2046338130.1761276142&semt=ais_hybrid&w=740&q=80');">
+                        <div class="container mt-xl-5 mb-xl-5">
+                            <div class="row">
+                                <div class="col-xxl-5 col-xl-5 col-lg-6">
+                                    <div class="who__left">
+                                        <div class="sec-title-wrap pb-3" data-aos="fade-up">
+                                            <h2 class="sec-subtitle">NUESTRA CULTURA</h2>
+                                            <h3 class="sec-subtitle heading-animation"
+                                                style="color: #0c1014; text-transform:none;">
+                                                Filosofía y compromiso que impulsan el bienestar financiero de los
+                                                trabajadores
+                                                <br>
+                                            </h3>
+                                        </div>
+
+                                        <div class="who__features">
 
 
-<section class="cta-banner4">
-    <div class="cta-overlay"></div>
+                                            <div class="who__feature" data-aos="fade-up" data-aos-delay="600">
+                                                <div class="number">
+                                                    <span class="color-base">01</span>
+                                                </div>
+                                                <div class="who__content">
+                                                    <h4 class="title">Misión</h4>
+                                                    <p>
+                                                        Brindar asesoría profesional a los trabajadores mexicanos,
+                                                        garantizando que cada cliente obtenga el retiro que se merece y
+                                                        aproveche todos los beneficios de su cuenta de afore.
+                                                    </p>
+                                                </div>
+                                            </div>
 
-    <div class="container">
-        <div class="cta-content">
-            <h2>
-        No buscamos un cliente, trabajamos para ser tu agencia de confianza y ayudarte a ti y a tu familia a que usen correctamente sus ahorros y planifiquen su pensión.        </div>
-    </div>
-</section>
+                                            <div class="who__feature" data-aos="fade-up" data-aos-delay="300">
+                                                <div class="number">
+                                                    <span class="color-base">02</span>
+                                                </div>
+                                                <div class="who__content">
+                                                    <h4 class="title">Visión</h4>
+                                                    <p>
+                                                        Convertirnos en uno de los referentes principales en educación
+                                                        de seguridad social y pensiones, para que los trabajadores
+                                                        planeen su jubilación a tiempo.
+                                                    </p>
+                                                </div>
+                                            </div>
 
+
+
+                                            <div class="who__feature" data-aos="fade-up" data-aos-delay="900">
+                                                <div class="number">
+                                                    <span class="color-base">03</span>
+                                                </div>
+                                                <div class="who__content">
+                                                    <h4 class="title">Valores</h4>
+                                                    <ul>
+                                                        <li>Responsabilidad</li>
+                                                        <li>Compromiso</li>
+                                                        <li>Transparencia</li>
+                                                        <li>Empatía</li>
+                                                        <li>Eficacia</li>
+                                                        <li>Confidencialidad</li>
+                                                        <li>Innovación</li>
+                                                        <li>Trabajo en equipo</li>
+                                                        <li>Resiliencia</li>
+                                                        <li>Diversidad e inclusión</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="cta-banner2">
+                    <div class="cta-overlay"></div>
+
+                    <div class="container">
+                        <div class="cta-content">
+                            <h2>
+                                Tus trámites son 100% seguros, todo se maneja bajo contrato y tienes un asesor a tu lado
+                                para resolver todas tus dudas antes, durante y después de contratarnos.
+                            </h2>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Counter area start -->
+                <section class="counter__area bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-12">
+                                <div class="counter__inner">
+                                    <div class="counter__item" data-aos="fade-right">
+                                        <div class="counter__number counter_slow style2">1430+
+                                        </div>
+                                        <h3 class="counter__title color-heading">Clientes satisfechos </h3>
+                                    </div>
+                                    <div class="counter__item" data-aos="fade-right" data-aos-delay="300">
+                                        <div class="counter__number counter_slow style2">6+
+                                        </div>
+                                        <h3 class="counter__title color-heading">Años de experiencia </h3>
+                                    </div>
+                                    <div class="counter__item" data-aos="fade-right" data-aos-delay="600">
+                                        <div class="counter__number counter_slow style2">2150+
+                                        </div>
+                                        <h3 class="counter__title color-heading">trámites realizados </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Counter area end -->
+
+
+                <section class="cta-banner4">
+                    <div class="cta-overlay"></div>
+
+                    <div class="container">
+                        <div class="cta-content">
+                            <h2>
+                                No buscamos un cliente, trabajamos para ser tu agencia de confianza y ayudarte a ti y a
+                                tu familia a que usen correctamente sus ahorros y planifiquen su pensión.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="testimonial-area-5">
                     <section class="testimonial-area-5">
-           <section class="testimonial-area-5">
-  <section class="testimonials-section">
-    <div class="container">
+                        <section class="testimonials-section">
+                            <div class="container">
 
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2 class="section-title">
-            Lo que opinan algunos de nuestros clientes
-          </h2>
-        </div>
-      </div>
+                                <div class="row">
+                                    <div class="col-12 text-center mb-5">
+                                        <h2 class="section-title">
+                                            Lo que opinan algunos de nuestros clientes
+                                        </h2>
+                                        <br>
 
-      <div class="row g-4">
+                                        <div class="rating-summary">
+                                            <span class="star">★</span>
+                                            <span class="rating-value">4.88</span>
+                                            <span class="rating-count">· 15 evaluaciones</span>
+                                        </div>
 
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-            Yo me volvi desconfiado desde una mala experiencia con un credito en el 2020 pero la asesora me dio confianza se firmo contrato y todo y ya pude retirar.            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Irving García</h6>
-            </div>
-          </article>
-        </div>
+                                    </div>
+                                </div>
 
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              A mi me ayudaron con mi crédito de infonavit, no sabía que uno paga una parte y tu patrón la otra. Es mejor asesorarse aunque pagues la comisión de la empresa, a hacerlo tú solo, sin saber todo lo que se puede hacer con la afore.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Lalo Gutierrez</h6>
-            </div>
-          </article>
-        </div>
+                                <div class="row g-4">
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              Los recomiendo, principalmente al asesor Angel Rivera, nos ha ayudado a mi familia y a mi con los trámites
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Kenia Mendez</h6>
-            </div>
-          </article>
-        </div>
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Uno pide porque no tiene y por que es nuestro dinero y el govierno y las afores ponen muchas trabas     
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Gabriela Gomez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              Buen servicio, me han ayudado a retirar dos veces, aunque si se me hace un poco caro lo que cobran, pero de eso a hacerlo con empresas fantasmas, mejor así
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Osmar Mendez</h6>
-            </div>
-          </article>
-        </div>
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Mi asesora fue Lupita, se las recomiendo, tiene experiencia y siempre busca la manera de retirar lo mas que se pueda del afore </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Lourdes Gonzalez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              Es la segunda vez que me ayudan a retirar de mi afore, pero esta vez solo pude retirar como 5000.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Rosa Perez</h6>
-            </div>
-          </article>
-        </div>
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Yo me volvi desconfiado desde una mala experiencia con un credito en el
+                                                2020 pero la asesora me dio confianza se firmo contrato y todo y ya pude
+                                                retirar. </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Irving García</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-            </div>
-            <p class="testimonial-text">
-              Buen servicio, yo hice mi retiro para remodelación de vivienda. Fue más tardado de lo previsto, pero si salió. Sólo siento que hace falta un poco más de capacitación de sus asesores
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Uriel Gomez</h6>
-            </div>
-          </article>
-        </div>
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                A mi me ayudaron con mi crédito de infonavit, no sabía que uno paga una
+                                                parte y tu patrón la otra. Es mejor asesorarse aunque pagues la comisión
+                                                de la empresa, a hacerlo tú solo, sin saber todo lo que se puede hacer
+                                                con la afore.
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Lalo Gutierrez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              Les doy 4 estrellas por que primero me digeron que iva a retirar como 50 y solo pude sacar 42
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Irma Gonzalez</h6>
-            </div>
-          </article>
-        </div>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Los recomiendo, principalmente al asesor Angel Rivera, nos ha ayudado a
+                                                mi familia y a mi con los trámites
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Kenia Mendez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              Los recomiendo. 4 estrellas. Sí te ayudan con los trámites, te cobran comisiones competitivas; tal vez puntos a mejorar son que por las tardes tardan más en responder en atención a clientes y que no tienen sucursales en el norte.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Julio Jaramillo</h6>
-            </div>
-          </article>
-        </div>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Buen servicio, me han ayudado a retirar dos veces, aunque si se me hace
+                                                un poco caro lo que cobran, pero de eso a hacerlo con empresas
+                                                fantasmas, mejor así
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Osmar Mendez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="2 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              El asesor que me estaba atendiendo no sabía bien los procesos, no sé si era nuevo o algo así, pero no me pudo apoyar como esperaba.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Isabela Mendez</h6>
-            </div>
-          </article>
-        </div>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Es la segunda vez que me ayudan a retirar de mi afore, pero esta vez
+                                                solo pude retirar como 5000.
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Rosa Perez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="2 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              A mí me tocó un asesor desesperado, no me supo dar bien la información y por eso ya no seguí con el trámite.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Jair Gomez</h6>
-            </div>
-          </article>
-        </div>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="5 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Buen servicio, yo hice mi retiro para remodelación de vivienda. Fue más
+                                                tardado de lo previsto, pero si salió. Sólo siento que hace falta un
+                                                poco más de capacitación de sus asesores
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Uriel Gomez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              Yo conocí esta agencia por mi esposo y al momento no tengo quejas, hemos podido retirar del afore sin problema.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Rosa Garcia</h6>
-            </div>
-          </article>
-        </div>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Les doy 4 estrellas por que primero me digeron que iva a retirar como 50
+                                                y solo pude sacar 42
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Irma Gonzalez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="2 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              Yo yevo más de un mes con lo de mi pencion, es tardado y se debe de tener mucha paciencia.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Daniela Iturbide</h6>
-            </div>
-          </article>
-        </div>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Los recomiendo. 4 estrellas. Sí te ayudan con los trámites, te cobran
+                                                comisiones competitivas; tal vez puntos a mejorar son que por las tardes
+                                                tardan más en responder en atención a clientes y que no tienen
+                                                sucursales en el norte.
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Julio Jaramillo</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="1 estrella">
-              <span class="star filled">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-              <span class="star empty">★</span>
-            </div>
-            <p class="testimonial-text">
-              Desde el mes pasado estoy intentando tramitar mi pensión, pero a la fecha no me han podido resolver; yo sé que es tardado, pero ya se me hizo mucho tiempo.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Gonzalo Jimenez</h6>
-            </div>
-          </article>
-        </div>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="2 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                El asesor que me estaba atendiendo no sabía bien los procesos, no sé si
+                                                era nuevo o algo así, pero no me pudo apoyar como esperaba.
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Isabela Mendez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-        <!-- CARD -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 estrellas">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-            </div>
-            <p class="testimonial-text">
-              Pensaba que acceder a mis ahorros era complicado, pero hicieron que todo fuera sencillo y entendible.
-            </p>
-            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
-            <div class="testimonial-author">
-              <h6>Gabriela Navarro</h6>
-            </div>
-          </article>
-        </div>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="2 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                A mí me tocó un asesor desesperado, no me supo dar bien la información y
+                                                por eso ya no seguí con el trámite.
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Jair Gomez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-      </div>
-    </div>
-  </section>
-</section>
-</section>
-   
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="4 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Yo conocí esta agencia por mi esposo y al momento no tengo quejas, hemos
+                                                podido retirar del afore sin problema.
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Rosa Garcia</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-                    <!-- intro area start -->
-                    
-                    <!-- intro area end -->
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="2 estrellas">
+                                                <span class="star filled">★</span>
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Yo yevo más de un mes con lo de mi pencion, es tardado y se debe de
+                                                tener mucha paciencia.
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Daniela Iturbide</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
-                    <!-- Contact area start -->
-                    <section class="contact__areas pt-150 pb-130">
-    <div class="container">
-        <div class="box-shadow p-xl-5 p-4 border-radius-50">
-            <div class="row">
-                
-                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-lg-0 mb-4">
-                    <img class="border-radius-25" 
-                         src="assets/imgs/hero/contactoFormIn.jpg" 
-                         alt="Contacto">
-                </div>
-
-                <div class="col-xxl-6 col-xl-6 col-lg-6 align-self-center">
-    <div class="contact__form contact__form-5 mt-0 pt-0 pb-0">
-
-        <div class="mb-4">
-            <h3 class="contact-title">Queremos conocer tu opinión</h3>
-            <p class="contact-subtitle">
-                Tu experiencia es muy importante para nosotros. 
-                Compártenos tus comentarios y ayúdanos a seguir mejorando.
-            </p>
-        </div>
-
-        <div data-aos="fade-up" data-aos-delay="600">
-
-            <form 
-                name="opiniones"
-                method="POST"
-                data-netlify="true"
-                action="/Gracias/">
-
-                <input type="hidden" name="form-name" value="opiniones">
-
-                <input 
-                    type="text" 
-                    name="name" 
-                    placeholder="Nombre*" 
-                    required>
-
-                <input 
-                    type="email" 
-                    name="email" 
-                    placeholder="E-mail*" 
-                    required>
-
-                <textarea 
-                    name="comments" 
-                    placeholder="Cuéntanos tu experiencia*" 
-                    required></textarea>
-
-                <button class="submit btn-rollover bg-base" type="submit">
-                    Enviar <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-</div>
-
-            </div>
-        </div>
-    </div>
-</section>
+                                    <!-- CARD -->
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <article class="testimonial-card">
+                                            <div class="testimonial-stars" aria-label="1 estrella">
+                                                <span class="star filled">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                                <span class="star empty">★</span>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                Desde el mes pasado estoy intentando tramitar mi pensión, pero a la
+                                                fecha no me han podido resolver; yo sé que es tardado, pero ya se me
+                                                hizo mucho tiempo.
+                                            </p>
+                                            <!-- <a href="#" class="testimonial-link">Leer opinión completa</a> -->
+                                            <div class="testimonial-author">
+                                                <h6>Gonzalo Jimenez</h6>
+                                            </div>
+                                        </article>
+                                    </div>
 
 
-<section class="cta-banner3">
-    <div class="cta-overlay"></div>
 
-    <div class="container">
-        <div class="cta-content">
-            <h2>
-            Los ahorros en tu afore son indispensables para cuando dejes de trabajar. Asesórate, infórmate y has los trámites con una agencia seria y con experiencia.            </h2>
-        </div>
-    </div>
-</section>
-                    <!-- Contact area end -->
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </section>
 
-                    <!-- Text Slider area start -->
-                    <!-- <section class="textslider__area bg-white p-0">
+
+                <!-- intro area start -->
+
+                <!-- intro area end -->
+
+                <!-- Contact area start -->
+                <section class="contact__areas contact-about-style pt-150 pb-130">
+                    <div class="container">
+                        <div class="contact-card">
+                            <div class="row align-items-center">
+
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-lg-0 mb-4">
+                                    <div class="contact-visual" data-aos="fade-up">
+                                        <div class="contact-image-wrap">
+                                            <img class="border-radius-25" src="assets/imgs/hero/contactoFormIn.jpg"
+                                                alt="Contacto">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 align-self-center">
+                                    <div class="contact__form contact__form-5 mt-0 pt-0 pb-0" data-aos="fade-up"
+                                        data-aos-delay="300">
+
+                                        <div class="mb-4">
+                                            <h3 class="contact-title">Queremos conocer tu opinión</h3>
+                                            <p class="contact-subtitle">
+                                                Tu experiencia es muy importante para nosotros.
+                                                Compártenos tus comentarios y ayúdanos a seguir mejorando.
+                                            </p>
+                                        </div>
+
+                                        <form name="opiniones" method="POST" data-netlify="true" action="/Gracias/">
+
+                                            <input type="hidden" name="form-name" value="opiniones">
+
+                                            <input type="text" name="name" placeholder="Nombre*" required>
+
+                                            <input type="email" name="email" placeholder="E-mail*" required>
+
+                                            <textarea name="comments" placeholder="Cuéntanos tu experiencia*"
+                                                required></textarea>
+
+                                            <button class="submit btn-rollover bg-base" type="submit">
+                                                Enviar <i class="fa-solid fa-arrow-right"></i>
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="cta-banner3">
+                    <div class="cta-overlay"></div>
+
+                    <div class="container">
+                        <div class="cta-content">
+                            <h2>
+                                Los ahorros en tu afore son indispensables para cuando dejes de trabajar. Asesórate,
+                                infórmate y has los trámites con una agencia seria y con experiencia. </h2>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact area end -->
+
+                <!-- Text Slider area start -->
+                <!-- <section class="textslider__area bg-white p-0">
                         <div class="textslider__inner">
                             <div class="swiper textslider__active textslider_1">
                                 <div class="swiper-wrapper">
@@ -1456,7 +1693,7 @@ background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 2
                             </div>
                         </div>
                     </section> -->
-                    <!-- <section class="textslider__area bg-white p-0">
+                <!-- <section class="textslider__area bg-white p-0">
                         <div class="textslider__inner">
                             <div class="swiper textslider__active-3 textslider_2">
                                 <div class="swiper-wrapper">
@@ -1494,10 +1731,10 @@ background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 2
                             </div>
                         </div>
                     </section> -->
-                    <!-- Text Slider area end -->
+                <!-- Text Slider area end -->
 
-                    <!-- FAQs area start -->
-                    <!-- <section class="faq__area bg-white pt-150 pb-120">
+                <!-- FAQs area start -->
+                <!-- <section class="faq__area bg-white pt-150 pb-120">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xxl-6 col-xl-6 col-xl-6">
@@ -1560,14 +1797,14 @@ background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 2
                             </div>
                         </div>
                     </section> -->
-                    <!-- FAQs area end -->
+                <!-- FAQs area end -->
 
-                    <!-- Who we are area start -->
-                   
-                    <!-- Who we are area end -->
+                <!-- Who we are area start -->
 
-                    <!-- Newsletter area start -->
-                    <!-- <section class="newsletter__area bg-light1 pt-120 pb-120">
+                <!-- Who we are area end -->
+
+                <!-- Newsletter area start -->
+                <!-- <section class="newsletter__area bg-light1 pt-120 pb-120">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xxl-5 col-xl-5 col-lg-5 align-self-center">
@@ -1585,10 +1822,10 @@ background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 2
                             </div>
                         </div>
                     </section> -->
-                    <!-- Newsletter area end -->
+                <!-- Newsletter area end -->
 
-                    <!-- Blog area start -->
-                    <!-- <section class="blog__area pt-150 pb-150">
+                <!-- Blog area start -->
+                <!-- <section class="blog__area pt-150 pb-150">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xxl-12">
@@ -1680,62 +1917,64 @@ background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 2
                             </div>
                         </div>
                     </section> -->
-                    <!-- Blog area end -->
+                <!-- Blog area end -->
 
-                </main>
-                <!-- Footer area start -->
-                <footer class="footer__area footer_two_area" aria-labelledby="footer-title">
-  <div class="footer__widgets">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-lg-4 col-md-6">
-          <div class="footer__logo">
-            <a href="index.html" class="d-inline-flex align-items-center" aria-label="Ir al inicio">
-              <img src="assets/imgs/logo/Kapital8.png" alt="Kapital Consulting Group">
-            </a>
+            </main>
+            <!-- Footer area start -->
+            <footer class="footer__area footer_two_area" aria-labelledby="footer-title">
+                <div class="footer__widgets">
+                    <div class="container">
+                        <div class="row gy-4 align-items-start">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer__logo">
+                                    <a href="index.html" class="d-inline-flex align-items-center"
+                                        aria-label="Ir al inicio">
+                                        <img src="assets/imgs/logo/Kapital8.png" alt="Kapital Consulting Group">
+                                    </a>
 
-            <p class="mt-3 mb-0 text-white-50">
-              © Kapital Consulting Group. Todos los derechos reservados
-            </p>
-          </div>
-        </div>
+                                    <p class="mt-3 mb-0 text-white-50">
+                                        © Kapital Consulting Group. Todos los derechos reservados
+                                    </p>
+                                </div>
+                            </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="footer__service">
-            <h2 class="footer__title" id="footer-title">Contacto</h2>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer__service">
+                                    <h2 class="footer__title" id="footer-title">Contacto</h2>
 
-            <ul class="footer__contact list-unstyled m-0">
-              <li class="d-flex align-items-start gap-3">
-                <span class="footer__icon" aria-hidden="true">
-                  <i class="fa-solid fa-location-dot"></i>
-                </span>
-               <address class="mb-0" style="color: white;">
-  Torre Albertina<br>
-  Calle Tehuacán Sur 60, Col. La Paz<br>
-  C.P. 72160, Puebla, Puebla
-</address>
-              </li>
+                                    <ul class="footer__contact list-unstyled m-0">
+                                        <li class="d-flex align-items-start gap-3">
+                                            <span class="footer__icon" aria-hidden="true">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </span>
+                                            <address class="mb-0" style="color: white;">
+                                                Torre Albertina<br>
+                                                Calle Tehuacán Sur 60, Col. La Paz<br>
+                                                C.P. 72160, Puebla, Puebla
+                                            </address>
+                                        </li>
 
-              <li class="d-flex align-items-center gap-3 mt-3">
-                <span class="footer__icon" aria-hidden="true">
-                  <i class="fa-solid fa-phone"></i>
-                </span>
-                <div class="d-flex flex-column">
-                  <a href="tel:+522215851569">(221) 585 1569</a>
-                </div>
-              </li>
+                                        <li class="d-flex align-items-center gap-3 mt-3">
+                                            <span class="footer__icon" aria-hidden="true">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </span>
+                                            <div class="d-flex flex-column">
+                                                <a href="tel:+522215851569">(221) 585 1569</a>
+                                            </div>
+                                        </li>
 
-              <li class="d-flex align-items-center gap-3 mt-3">
-                <span class="footer__icon" aria-hidden="true">
-                  <i class="fa-solid fa-envelope"></i>
-                </span>
-                <a href="mailto:clientes@kapitalconsultinggroup.com">clientes@kapitalconsultinggroup.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+                                        <li class="d-flex align-items-center gap-3 mt-3">
+                                            <span class="footer__icon" aria-hidden="true">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </span>
+                                            <a
+                                                href="mailto:clientes@kapitalconsultinggroup.com">clientes@kapitalconsultinggroup.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-        <!-- <div class="col-lg-4 col-md-12">
+                            <!-- <div class="col-lg-4 col-md-12">
           <div class="footer__service">
             <h2 class="footer__title">Navegación</h2>
             <ul class="footer__links list-unstyled m-0">
@@ -1746,76 +1985,77 @@ background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);   padding: 60px 2
             </ul>
           </div>
         </div> -->
-      </div>
+                        </div>
 
-      <div class="footer__bottom mt-4 pt-4 border-top border-light border-opacity-10">
-        <div class="row align-items-center gy-2">
-          <div class="col-md-6">
-            <p class="mb-0 text-white-50 small">
-              Torre Albertina · Puebla, México
-            </p>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <a class="small text-white-50" href="privacy.html">Aviso de privacidad</a>
-          </div>
+                        <div class="footer__bottom mt-4 pt-4 border-top border-light border-opacity-10">
+                            <div class="row align-items-center gy-2">
+                                <div class="col-md-6">
+                                    <p class="mb-0 text-white-50 small">
+                                        Torre Albertina · Puebla, México
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-md-end">
+                                    <a class="small text-white-50" href="privacy.html">Aviso de privacidad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer area end -->
         </div>
-      </div>
     </div>
-  </div>
-</footer>
-                <!-- Footer area end -->
-            </div>
-        </div>
-        <!-- All JS Files -->
-        <script src="assets/js/jquery-3.6.1.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/jquery.meanmenu.min.js"></script>
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/counter.js"></script>
-        <script src="assets/js/progressbar.js"></script>
-        <script src="assets/js/aos.js"></script>
-        <script src="assets/js/gsap.min.js"></script>
-        <script src="assets/js/SplitText.min.js"></script>
-        <script src="assets/js/ScrollSmoother.min.js"></script>
-        <script src="assets/js/ScrollTrigger.min.js"></script>
-        <script src="assets/js/vanilla-tilt.min.js"></script>
-        <script src="assets/js/main.js"></script>
+    <!-- All JS Files -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-        <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const btnAbout = document.getElementById('btn-about-company');
-    const btnWhy = document.getElementById('btn-why-choose-us');
-    const contentAbout = document.getElementById('content-about-company');
-    const contentWhy = document.getElementById('content-why-choose-us');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btnAbout = document.getElementById('btn-about-company');
+            const btnWhy = document.getElementById('btn-why-choose-us');
+            const contentAbout = document.getElementById('content-about-company');
+            const contentWhy = document.getElementById('content-why-choose-us');
 
-    btnAbout.addEventListener('click', function () {
-        btnAbout.classList.add('active');
-        btnWhy.classList.remove('active');
+            btnAbout.addEventListener('click', function () {
+                btnAbout.classList.add('active');
+                btnWhy.classList.remove('active');
 
-        contentAbout.style.display = 'block';
-        contentWhy.style.display = 'none';
-    });
+                contentAbout.style.display = 'block';
+                contentWhy.style.display = 'none';
+            });
 
-    btnWhy.addEventListener('click', function () {
-        btnWhy.classList.add('active');
-        btnAbout.classList.remove('active');
+            btnWhy.addEventListener('click', function () {
+                btnWhy.classList.add('active');
+                btnAbout.classList.remove('active');
 
-        contentWhy.style.display = 'block';
-        contentAbout.style.display = 'none';
-    });
+                contentWhy.style.display = 'block';
+                contentAbout.style.display = 'none';
+            });
 
-    const btns = document.querySelectorAll('.about-switch-buttons .btn');
+            const btns = document.querySelectorAll('.about-switch-buttons .btn');
 
-btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        btns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-    });
-});
+            btns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                });
+            });
 
-});
-</script>
+        });
+    </script>
 
-    </body>
+</body>
+
 </html>

@@ -37,7 +37,7 @@
   --nav-h: 110px; /* ajusta si necesitas */
 }
 
-/* Fuerza que el header no sea absolute */
+/* Fuerza que el header no sea absolute 
 .header__area,
 .header__area.pos-abs{
   position: fixed !important;
@@ -47,40 +47,40 @@
   height: var(--nav-h);
   z-index: 99999;
 
-  background: #0c1014; /* color sólido */
+  background: #0c1014; 
   backdrop-filter: none !important;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-/* Alineación interna */
+ Alineación interna 
 .header__inner{
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-/* Texto del menú en blanco */
+ Texto del menú en blanco 
 .main-menu > ul > li > a{
   color: #fff !important;
 }
 
 .main-menu > ul > li > a:hover{
-  color: #c59d5f !important; /* color acento */
+  color: #c59d5f !important; color acento 
 }
 
-/* Empuja el contenido debajo del header */
+Empuja el contenido debajo del header
 body{
   padding-top: var(--nav-h);
 }
 
-/* Responsive */
+ Responsive 
 @media (max-width: 991px){
   :root{ --nav-h: 90px; }
 }
 
 @media (max-width: 575px){
   :root{ --nav-h: 78px; }
-}
+}*/
 
 .breadcrumb__area{
   display: block;
@@ -168,6 +168,130 @@ body{
 }
   </style>
 
+
+  <style>
+    /* ===== PRIVACY / DETAILS estilo ABOUT ===== */
+.projectd__details-inner{
+  background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);
+  padding: 60px 20px;
+}
+
+.projectd__details-inner .container{
+  background: linear-gradient(135deg, #f5efe6 0%, #efe6d8 100%);
+  border-radius: 30px;
+  padding: 50px 40px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(182, 153, 116, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.projectd__details-inner .container::before{
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(182,153,116,0.18) 0%, transparent 70%);
+}
+
+.projectd__wrapper-inner{
+  position: relative;
+  z-index: 2;
+}
+
+.projectd__thumb{
+  display: none;
+}
+
+.projectd__content{
+  background: #fff;
+  border-radius: 24px;
+  padding: 36px 32px;
+  border: 1px solid rgba(182, 153, 116, 0.14);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
+}
+
+.projectd__details-title{
+  font-size: 42px;
+  line-height: 1.15;
+  margin-bottom: 24px;
+  color: #222;
+  font-weight: 700;
+  position: relative;
+}
+
+.projectd__details-title::after{
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  margin-top: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b69974 0%, rgba(182,153,116,0.2) 100%);
+}
+
+.projectd__content p{
+  color: #444;
+  line-height: 1.85;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.projectd__content p:last-child{
+  margin-bottom: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px){
+  .projectd__details-inner .container{
+    padding: 40px 25px;
+  }
+
+  .projectd__content{
+    padding: 28px 24px;
+  }
+
+  .projectd__details-title{
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767px){
+  .projectd__details-inner{
+    padding: 40px 12px;
+  }
+
+  .projectd__details-inner .container{
+    padding: 28px 18px;
+    border-radius: 20px;
+  }
+
+  .projectd__content{
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .projectd__details-title{
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .projectd__details-title::after{
+    width: 70px;
+    height: 3px;
+    margin-top: 10px;
+  }
+
+  .projectd__content p{
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
+  </style>
+
+<link rel="stylesheet" href="assets/css/nav.css">
 </head>
 
 <body>

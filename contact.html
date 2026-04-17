@@ -32,56 +32,11 @@
   <link rel="stylesheet" href="assets/css/progressbar.css">
   <link rel="stylesheet" href="assets/css/master.css">
         <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/css/stylesMain.css">
+  <link rel="stylesheet" href="assets/css/stylesMain.css"> 
+  <link rel="stylesheet" href="assets/css/nav.css">
+  
   <style>
-   :root{
-  --nav-h: 110px; /* ajusta si necesitas */
-}
 
-/* Fuerza que el header no sea absolute */
-.header__area,
-.header__area.pos-abs{
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: var(--nav-h);
-  z-index: 99999;
-
-  background: #0c1014; /* color sólido */
-  backdrop-filter: none !important;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-/* Alineación interna */
-.header__inner{
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-/* Texto del menú en blanco */
-.main-menu > ul > li > a{
-  color: #fff !important;
-}
-
-.main-menu > ul > li > a:hover{
-  color: #c59d5f !important; /* color acento */
-}
-
-/* Empuja el contenido debajo del header */
-body{
-  padding-top: var(--nav-h);
-}
-
-/* Responsive */
-@media (max-width: 991px){
-  :root{ --nav-h: 90px; }
-}
-
-@media (max-width: 575px){
-  :root{ --nav-h: 78px; }
-}
 
 .breadcrumb__area{
   width: 100%;
@@ -114,6 +69,155 @@ body{
 
   </style>
 
+  <style>
+    /* ===== CONTACT AREA estilo ABOUT ===== */
+.contact__area-6{
+  background: linear-gradient(135deg, #0a2e52 0%, #041f3a 100%);
+  padding: 60px 20px;
+}
+
+.contact__area-6 .container{
+  background: linear-gradient(135deg, #f5efe6 0%, #efe6d8 100%);
+  border-radius: 30px;
+  padding: 50px 40px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(182, 153, 116, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+/* efecto decorativo como about */
+.contact__area-6 .container::before{
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(182,153,116,0.18) 0%, transparent 70%);
+}
+
+/* ===== ITEMS DE CONTACTO ===== */
+.contact__item{
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px 18px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(182, 153, 116, 0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+  transition: .3s;
+}
+
+.contact__item:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(182,153,116,0.12);
+}
+
+.contact__item i{
+  font-size: 20px;
+  color: #b69974;
+  margin-bottom: 10px;
+}
+
+.contact__item .title{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.contact__item p,
+.contact__item a{
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ===== MAPA ===== */
+.contact__area-6 iframe{
+  border-radius: 25px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  border: none;
+}
+
+/* ===== FORM ===== */
+.blog__form{
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid rgba(182, 153, 116, 0.15);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.05);
+}
+
+.blog__form-title{
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.blog__form input,
+.blog__form textarea{
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(182,153,116,0.3);
+  padding: 14px 16px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background: rgba(255,255,255,0.7);
+  transition: .25s;
+}
+
+.blog__form input:focus,
+.blog__form textarea:focus{
+  border-color: #b69974;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(182,153,116,0.15);
+  outline: none;
+}
+
+.blog__form textarea{
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* botón */
+.contact__submit{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #c5a57d 0%, #b69974 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 10px 24px rgba(182,153,116,0.25);
+  transition: .3s;
+}
+
+.contact__submit:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(182,153,116,0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 767px){
+  .contact__area-6 .container{
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .blog__form{
+    padding: 20px;
+  }
+}
+  </style>
+
+<link rel="stylesheet" href="assets/css/nav.css">
 </head>
 
 <body>

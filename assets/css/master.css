@@ -11037,3 +11037,52 @@ HOME FIVE FOOTER
         line-height: 1.5;
     }
 }
+
+.footer_two_area{
+    border-top: 10px solid #0a2e52;
+    border-left: 10px solid #0a2e52;
+    border-right: 10px solid #0a2e52;
+}
+
+.rating-summary{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:10px;
+
+  font-size:20px;
+  font-weight:600;
+  color:#222;
+}
+
+.rating-summary .star{
+  color:#b69974; /* 🔥 dorado consistente */
+  font-size:22px;
+}
+
+.rating-summary .rating-value{
+  font-size:22px;
+  font-weight:700;
+}
+
+.rating-summary .rating-count{
+  font-size:18px;
+  font-weight:500;
+  color:#555;
+}
+
+/* Responsive */
+@media (max-width: 767px){
+  .rating-summary{
+    font-size:16px;
+  }
+
+  .rating-summary .rating-value{
+    font-size:18px;
+  }
+
+  .rating-summary .rating-count{
+    font-size:14px;
+  }
+}

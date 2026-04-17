@@ -37,7 +37,7 @@
   --nav-h: 110px; /* ajusta si necesitas */
 }
 
-/* Fuerza que el header no sea absolute */
+/* Fuerza que el header no sea absolute 
 .header__area,
 .header__area.pos-abs{
   position: fixed !important;
@@ -47,40 +47,40 @@
   height: var(--nav-h);
   z-index: 99999;
 
-  background: #0c1014; /* color sólido */
+  background: #0c1014; 
   backdrop-filter: none !important;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-/* Alineación interna */
+ Alineación interna 
 .header__inner{
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-/* Texto del menú en blanco */
+ Texto del menú en blanco 
 .main-menu > ul > li > a{
   color: #fff !important;
 }
 
 .main-menu > ul > li > a:hover{
-  color: #c59d5f !important; /* color acento */
+  color: #c59d5f !important; color acento 
 }
 
-/* Empuja el contenido debajo del header */
+Empuja el contenido debajo del header
 body{
   padding-top: var(--nav-h);
 }
 
-/* Responsive */
+ Responsive 
 @media (max-width: 991px){
   :root{ --nav-h: 90px; }
 }
 
 @media (max-width: 575px){
   :root{ --nav-h: 78px; }
-}
+}*/
 
 .breadcrumb__area{
   width: 100%;
@@ -113,6 +113,7 @@ body{
 
   </style>
 
+<link rel="stylesheet" href="assets/css/nav.css">
 </head>
 
 <body>
@@ -332,11 +333,11 @@ Las autoridades han señalado que esta medida representa un paso importante para
                 <span class="footer__icon" aria-hidden="true">
                   <i class="fa-solid fa-location-dot"></i>
                 </span>
-                <address class="mb-0" style="color: white;">
-                  Torre Albertina<br>
-                  Calle Tehuacan Sur 60, La Paz,<br>
-                  Heroica Puebla de Zaragoza, Puebla
-                </address>
+               <address class="mb-0" style="color: white;">
+  Torre Albertina<br>
+  Calle Tehuacán Sur 60, Col. La Paz<br>
+  C.P. 72160, Puebla, Puebla
+</address>
               </li>
 
               <li class="d-flex align-items-center gap-3 mt-3">

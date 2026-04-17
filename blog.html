@@ -32,56 +32,15 @@
   <link rel="stylesheet" href="assets/css/progressbar.css">
   <link rel="stylesheet" href="assets/css/master.css">
   <link rel="stylesheet" href="assets/css/stylesMain.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+
 
   <style>
    :root{
   --nav-h: 110px; /* ajusta si necesitas */
 }
 
-/* Fuerza que el header no sea absolute */
-.header__area,
-.header__area.pos-abs{
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: var(--nav-h);
-  z-index: 99999;
 
-  background: #0c1014; /* color sólido */
-  backdrop-filter: none !important;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-/* Alineación interna */
-.header__inner{
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-/* Texto del menú en blanco */
-.main-menu > ul > li > a{
-  color: #fff !important;
-}
-
-.main-menu > ul > li > a:hover{
-  color: #c59d5f !important; /* color acento */
-}
-
-/* Empuja el contenido debajo del header */
-body{
-  padding-top: var(--nav-h);
-}
-
-/* Responsive */
-@media (max-width: 991px){
-  :root{ --nav-h: 90px; }
-}
-
-@media (max-width: 575px){
-  :root{ --nav-h: 78px; }
-}
 
 .breadcrumb__area{
   display: block;
@@ -125,6 +84,7 @@ body{
 }
   </style>
 
+<link rel="stylesheet" href="assets/css/nav.css">
 </head>
 
 <body>
@@ -290,6 +250,22 @@ esta sección para que puedas conocer las noticias más relevantes.
       <div class="container">
         <div class="blog__list">
 
+          <article class="blog__item mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="blog__thumb">
+                  <div class="shine">
+                      <a href="Fondo.html">
+                          <img class="border-radius-25" src="https://imagenes.elpais.com/resizer/v2/5UHC43C3YBCMDG6J3Y434JNUII.jpg?auth=4713d507a545ac0719d13351552e3c3af9bf2b8990e0ef3cd4b5bbdabd904118&width=414" alt="Thumbnail">
+                      </a>
+                  </div>
+              </div>
+              <br>
+              <a href="Fondo.html">
+                  <h4 class="blog__title">Nueva polémica por el ahorro para el retiro: el 30%, las Afores y la nueva norma</h4>
+              </a>
+              <a class="db-btn-arrow" href="Fondo.html">Leer <i class="fa-solid fa-arrow-right"></i>
+              </a>
+          </article>
+
 
            <article class="blog__item mb-4" data-aos="fade-up" data-aos-delay="300">
               <div class="blog__thumb">
@@ -303,23 +279,23 @@ esta sección para que puedas conocer las noticias más relevantes.
               <a href="Impagable.html">
                   <h4 class="blog__title">Infonavit elimina casi 5 millones de “créditos impagables</h4>
               </a>
-              <a class="db-btn-arrow" href="cuenta.html">Leer <i class="fa-solid fa-arrow-right"></i>
+              <a class="db-btn-arrow" href="Impagable.html">Leer <i class="fa-solid fa-arrow-right"></i>
               </a>
           </article>
 
           <article class="blog__item mb-4" data-aos="fade-up" data-aos-delay="300">
               <div class="blog__thumb">
                   <div class="shine">
-                      <a href="cuenta.html">
+                      <a href="Devolucion.html">
                           <img class="border-radius-25" src="https://www.eluniversal.com.mx/resizer/v2/GFD52SZBTJBRNJS7TYPHGBMZQY.jpg?auth=e1358d336cd860f4fd69cb1c75ce3fea53029cc66938a00365cead3b45f37fe2&smart=true&height=373" alt="Thumbnail">
                       </a>
                   </div>
               </div>
               <br>
-              <a href="cuenta.html">
+              <a href="Devolucion.html">
                   <h4 class="blog__title">Infonavit detalla cómo solicitar la devolución del ahorro en la Subcuenta de Vivienda; hay dos formas para hacerlo</h4>
               </a>
-              <a class="db-btn-arrow" href="cuenta.html">Leer <i class="fa-solid fa-arrow-right"></i>
+              <a class="db-btn-arrow" href="Devolucion.html">Leer <i class="fa-solid fa-arrow-right"></i>
               </a>
           </article>
 
@@ -555,11 +531,11 @@ esta sección para que puedas conocer las noticias más relevantes.
                 <span class="footer__icon" aria-hidden="true">
                   <i class="fa-solid fa-location-dot"></i>
                 </span>
-                <address class="mb-0" style="color: white;">
-                  Torre Albertina<br>
-                  Calle Tehuacan Sur 60, La Paz,<br>
-                  Heroica Puebla de Zaragoza, Puebla
-                </address>
+               <address class="mb-0" style="color: white;">
+  Torre Albertina<br>
+  Calle Tehuacán Sur 60, Col. La Paz<br>
+  C.P. 72160, Puebla, Puebla
+</address>
               </li>
 
               <li class="d-flex align-items-center gap-3 mt-3">
