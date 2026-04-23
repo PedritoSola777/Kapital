@@ -410,13 +410,56 @@
         </div>
       </div>
     </section>
+
+    <style>
+      
+    </style>
     <!-- Breadcrumb area end -->
 
+    <div class="news-section-wrapper">
     <p class="news-intro">
-Nos interesa que nuestros clientes estén informados sobre las principales
-novedades en el mundo de las afores y las pensiones. Por ello, hemos creado
-esta sección para que puedas conocer las noticias más relevantes.
-</p>
+        Nos interesa que nuestros clientes estén informados sobre las principales
+        novedades en el mundo de las afores y las pensiones. Por ello, hemos creado
+        esta sección para que puedas conocer las noticias más relevantes.
+    </p>
+</div>
+
+<style>
+ /* Este es el fondo oscuro que rodea a la card */
+.news-section-wrapper {
+    background: radial-gradient(circle at center, #1a2a44 0%, #0a0f18 100%);
+    padding: 60px 20px; /* Espacio interno para que la card no toque los bordes */
+    display: flex;
+    justify-content: center;
+    border-radius: 8px; /* Opcional: por si quieres que el fondo oscuro también tenga curvas */
+}
+
+/* Esta es la card con efecto cristal azul oscuro */
+.news-intro {
+    text-align: center;
+    max-width: 750px;
+    padding: 40px;
+    margin: 0; /* Quitamos márgenes externos para que el wrapper mande */
+    
+    /* Efecto Glass Dark Blue */
+    background: rgba(15, 23, 42, 0.7); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* Borde fino y elegante */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    
+    /* Sombra profunda */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    
+    /* Texto */
+    color: #ffffff;
+    font-family: sans-serif;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+</style>
 
 
     <!-- blog-grid area start -->
